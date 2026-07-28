@@ -1,0 +1,16 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  "../../../eMMC_Controller.srcs/sources_1/imports/sources/CRC7_400K.v" --include "../../../eMMC_Controller.srcs/sim_1/imports/sources_1/imports/sources" --include "../../../eMMC_Controller.srcs/sources_1/imports/sources"
+verilog xil_defaultlib  "../../../eMMC_Controller.srcs/sources_1/imports/sources/CRC7.v" --include "../../../eMMC_Controller.srcs/sim_1/imports/sources_1/imports/sources" --include "../../../eMMC_Controller.srcs/sources_1/imports/sources"
+verilog xil_defaultlib  "../../../eMMC_Controller.srcs/sources_1/imports/sources/CRC16_Check.v" --include "../../../eMMC_Controller.srcs/sim_1/imports/sources_1/imports/sources" --include "../../../eMMC_Controller.srcs/sources_1/imports/sources"
+verilog xil_defaultlib  "../../../eMMC_Controller.srcs/sources_1/imports/sources/CRC16.v" --include "../../../eMMC_Controller.srcs/sim_1/imports/sources_1/imports/sources" --include "../../../eMMC_Controller.srcs/sources_1/imports/sources"
+verilog xil_defaultlib  "../../../eMMC_Controller.srcs/sources_1/ip/clk_divided/clk_divided_clk_wiz.v" --include "../../../eMMC_Controller.srcs/sim_1/imports/sources_1/imports/sources" --include "../../../eMMC_Controller.srcs/sources_1/imports/sources"
+verilog xil_defaultlib  "../../../eMMC_Controller.srcs/sources_1/ip/clk_divided/clk_divided.v" --include "../../../eMMC_Controller.srcs/sim_1/imports/sources_1/imports/sources" --include "../../../eMMC_Controller.srcs/sources_1/imports/sources"
+verilog xil_defaultlib  "../../../eMMC_Controller.srcs/sources_1/imports/sources/eMMC_controller.v" --include "../../../eMMC_Controller.srcs/sim_1/imports/sources_1/imports/sources" --include "../../../eMMC_Controller.srcs/sources_1/imports/sources"
+verilog xil_defaultlib  "../../../eMMC_Controller.srcs/sources_1/imports/sources/Test_eMMC_Controller.v" --include "../../../eMMC_Controller.srcs/sim_1/imports/sources_1/imports/sources" --include "../../../eMMC_Controller.srcs/sources_1/imports/sources"
+verilog xil_defaultlib  "../../../eMMC_Controller.srcs/sim_1/imports/eMMC_Controller/srcs/sim/Test_eMMC_Controller_tb.v" --include "../../../eMMC_Controller.srcs/sim_1/imports/sources_1/imports/sources" --include "../../../eMMC_Controller.srcs/sources_1/imports/sources"
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

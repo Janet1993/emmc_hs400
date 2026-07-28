@@ -1,0 +1,6 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  "Test_eMMC_Controller_tb_func_synth.v" --include "../../../../eMMC_Controller.srcs/sources_1/imports/sources" --include "../../../../eMMC_Controller.srcs/sources_1/new"
+verilog xil_defaultlib  "../../../../eMMC_Controller.srcs/sim_1/imports/eMMC_Controller/srcs/sim/Test_eMMC_Controller_tb.v" --include "../../../../eMMC_Controller.srcs/sources_1/imports/sources" --include "../../../../eMMC_Controller.srcs/sources_1/new"
+
+# Do not sort compile order
+nosort

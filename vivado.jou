@@ -1,0 +1,1013 @@
+#-----------------------------------------------------------
+# Vivado v2015.4 (64-bit)
+# SW Build 1412921 on Wed Nov 18 09:43:45 MST 2015
+# IP Build 1412160 on Tue Nov 17 13:47:24 MST 2015
+# Start of session at: Wed Nov 02 18:44:25 2016
+# Process ID: 138080
+# Current directory: C:/Users/Wu Lizhou/AppData/Roaming/Xilinx/Vivado
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent137268
+# Log file: C:/Users/Wu Lizhou/AppData/Roaming/Xilinx/Vivado/vivado.log
+# Journal file: C:/Users/Wu Lizhou/AppData/Roaming/Xilinx/Vivado\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/VivadoProjects/eMMC_Controller_fifo.xpr/eMMC_Controller_4.6.1_tuning.xpr/eMMC_Controller/eMMC_Controller.xpr
+update_compile_order -fileset sources_1
+update_compile_order -fileset sim_1
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {D:/VivadoProjects/eMMC_Controller_fifo.xpr/eMMC_Controller_4.6.1_tuning.xpr/eMMC_Controller/eMMC_Controller.runs/impl_4/Test_eMMC_Controller.bit} [lindex [get_hw_devices] 1]
+set_property PROBES.FILE {D:/VivadoProjects/eMMC_Controller_fifo.xpr/eMMC_Controller_4.6.1_tuning.xpr/eMMC_Controller/eMMC_Controller.runs/impl_4/debug_nets.ltx} [lindex [get_hw_devices] 1]
+current_hw_device [lindex [get_hw_devices] 1]
+refresh_hw_device [lindex [get_hw_devices] 1]
+set_property PROBES.FILE {D:/VivadoProjects/eMMC_Controller_fifo.xpr/eMMC_Controller_4.6.1_tuning.xpr/eMMC_Controller/eMMC_Controller.runs/impl_4/debug_nets.ltx} [lindex [get_hw_devices] 1]
+set_property PROGRAM.FILE {D:/VivadoProjects/eMMC_Controller_fifo.xpr/eMMC_Controller_4.6.1_tuning.xpr/eMMC_Controller/eMMC_Controller.runs/impl_4/Test_eMMC_Controller.bit} [lindex [get_hw_devices] 1]
+program_hw_devices [lindex [get_hw_devices] 1]
+refresh_hw_device [lindex [get_hw_devices] 1]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}] -trigger_now
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}] -trigger_now
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]]
+set_property TRIGGER_COMPARE_VALUE eq5'h0B [get_hw_probes eMMC_controller_inst0/Steps_Curr_State -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}] -trigger_now
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]]
+save_wave_config {D:/VivadoProjects/eMMC_Controller_fifo.xpr/eMMC_Controller_4.6.1_tuning.xpr/eMMC_Controller/eMMC_Controller.hw/hw_1/wave/hw_ila_data_1/hw_ila_data_1.wcfg}
+close_hw
+reset_run synth_4
+launch_runs synth_4 -jobs 2
+wait_on_run synth_4
+reset_run synth_4
+launch_runs synth_4 -jobs 2
+wait_on_run synth_4
+open_run synth_4 -name synth_4
+launch_runs impl_4 -to_step write_bitstream -jobs 2
+wait_on_run impl_4
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {D:/VivadoProjects/eMMC_Controller_fifo.xpr/eMMC_Controller_4.6.1_tuning.xpr/eMMC_Controller/eMMC_Controller.runs/impl_4/Test_eMMC_Controller.bit} [lindex [get_hw_devices] 1]
+set_property PROBES.FILE {D:/VivadoProjects/eMMC_Controller_fifo.xpr/eMMC_Controller_4.6.1_tuning.xpr/eMMC_Controller/eMMC_Controller.runs/impl_4/debug_nets.ltx} [lindex [get_hw_devices] 1]
+current_hw_device [lindex [get_hw_devices] 1]
+refresh_hw_device [lindex [get_hw_devices] 1]
+set_property PROBES.FILE {D:/VivadoProjects/eMMC_Controller_fifo.xpr/eMMC_Controller_4.6.1_tuning.xpr/eMMC_Controller/eMMC_Controller.runs/impl_4/debug_nets.ltx} [lindex [get_hw_devices] 1]
+set_property PROGRAM.FILE {D:/VivadoProjects/eMMC_Controller_fifo.xpr/eMMC_Controller_4.6.1_tuning.xpr/eMMC_Controller/eMMC_Controller.runs/impl_4/Test_eMMC_Controller.bit} [lindex [get_hw_devices] 1]
+program_hw_devices [lindex [get_hw_devices] 1]
+refresh_hw_device [lindex [get_hw_devices] 1]
+set_property PROBES.FILE {D:/VivadoProjects/eMMC_Controller_fifo.xpr/eMMC_Controller_4.6.1_tuning.xpr/eMMC_Controller/eMMC_Controller.runs/impl_4/debug_nets.ltx} [lindex [get_hw_devices] 1]
+set_property PROGRAM.FILE {D:/VivadoProjects/eMMC_Controller_fifo.xpr/eMMC_Controller_4.6.1_tuning.xpr/eMMC_Controller/eMMC_Controller.runs/impl_4/Test_eMMC_Controller.bit} [lindex [get_hw_devices] 1]
+program_hw_devices [lindex [get_hw_devices] 1]
+refresh_hw_device [lindex [get_hw_devices] 1]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}] -trigger_now
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}] -trigger_now
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}] -trigger_now
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}] -trigger_now
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}] -trigger_now
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}] -trigger_now
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}] -trigger_now
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]]
+set_property TRIGGER_COMPARE_VALUE eq5'h17 [get_hw_probes eMMC_controller_inst0/Steps_Curr_State -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}] -trigger_now
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]]
+set_property PROBES.FILE {D:/VivadoProjects/eMMC_Controller_fifo.xpr/eMMC_Controller_4.6.1_tuning.xpr/eMMC_Controller/eMMC_Controller.runs/impl_4/debug_nets.ltx} [lindex [get_hw_devices] 1]
+set_property PROGRAM.FILE {D:/VivadoProjects/eMMC_Controller_fifo.xpr/eMMC_Controller_4.6.1_tuning.xpr/eMMC_Controller/eMMC_Controller.runs/impl_4/Test_eMMC_Controller.bit} [lindex [get_hw_devices] 1]
+program_hw_devices [lindex [get_hw_devices] 1]
+refresh_hw_device [lindex [get_hw_devices] 1]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}] -trigger_now
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}] -trigger_now
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]]
+close_hw
+delete_debug_port [get_debug_ports {u_ila_0/probe10 }]
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {D:/VivadoProjects/eMMC_Controller_fifo.xpr/eMMC_Controller_4.6.1_tuning.xpr/eMMC_Controller/eMMC_Controller.runs/impl_4/Test_eMMC_Controller.bit} [lindex [get_hw_devices] 1]
+set_property PROBES.FILE {D:/VivadoProjects/eMMC_Controller_fifo.xpr/eMMC_Controller_4.6.1_tuning.xpr/eMMC_Controller/eMMC_Controller.runs/impl_4/debug_nets.ltx} [lindex [get_hw_devices] 1]
+current_hw_device [lindex [get_hw_devices] 1]
+refresh_hw_device [lindex [get_hw_devices] 1]
+set_property PROBES.FILE {D:/VivadoProjects/eMMC_Controller_fifo.xpr/eMMC_Controller_4.6.1_tuning.xpr/eMMC_Controller/eMMC_Controller.runs/impl_4/debug_nets.ltx} [lindex [get_hw_devices] 1]
+set_property PROGRAM.FILE {D:/VivadoProjects/eMMC_Controller_fifo.xpr/eMMC_Controller_4.6.1_tuning.xpr/eMMC_Controller/eMMC_Controller.runs/impl_4/Test_eMMC_Controller.bit} [lindex [get_hw_devices] 1]
+program_hw_devices [lindex [get_hw_devices] 1]
+refresh_hw_device [lindex [get_hw_devices] 1]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}] -trigger_now
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]]
+close_hw
+save_constraints
+close_design
+reset_run synth_4
+launch_runs synth_4 -jobs 2
+wait_on_run synth_4
+open_run synth_4 -name synth_4
+set_property mark_debug true [get_nets [list {eMMC_controller_inst0/Device_data_bus_out_reg_n_0_[0]}]]
+set_property mark_debug true [get_nets [list {eMMC_controller_inst0/Device_data_bus_out_reg_n_0_[0]} {eMMC_controller_inst0/Device_data_bus_out_reg_n_0_[11]} {eMMC_controller_inst0/Device_data_bus_out_reg_n_0_[10]}]]
+set_property mark_debug false [get_nets [list {eMMC_controller_inst0/Device_data_bus_out_reg_n_0_[10]} {eMMC_controller_inst0/Device_data_bus_out_reg_n_0_[12]} {eMMC_controller_inst0/Device_data_bus_out_reg_n_0_[14]} {eMMC_controller_inst0/Device_data_bus_out_reg_n_0_[1]} {eMMC_controller_inst0/Device_data_bus_out_reg_n_0_[3]} {eMMC_controller_inst0/Device_data_bus_out_reg_n_0_[5]} {eMMC_controller_inst0/Device_data_bus_out_reg_n_0_[7]} {eMMC_controller_inst0/Device_data_bus_out_reg_n_0_[0]} {eMMC_controller_inst0/Device_data_bus_out_reg_n_0_[11]} {eMMC_controller_inst0/Device_data_bus_out_reg_n_0_[13]} {eMMC_controller_inst0/Device_data_bus_out_reg_n_0_[15]} {eMMC_controller_inst0/Device_data_bus_out_reg_n_0_[2]} {eMMC_controller_inst0/Device_data_bus_out_reg_n_0_[4]} {eMMC_controller_inst0/Device_data_bus_out_reg_n_0_[6]}]]
+set_property mark_debug false [get_nets [list {eMMC_controller_inst0/Device_data_bus_out_reg_n_0_[10]} {eMMC_controller_inst0/Device_data_bus_out_reg_n_0_[12]} {eMMC_controller_inst0/Device_data_bus_out_reg_n_0_[14]} {eMMC_controller_inst0/Device_data_bus_out_reg_n_0_[1]} {eMMC_controller_inst0/Device_data_bus_out_reg_n_0_[3]} {eMMC_controller_inst0/Device_data_bus_out_reg_n_0_[5]} {eMMC_controller_inst0/Device_data_bus_out_reg_n_0_[7]} {eMMC_controller_inst0/Device_data_bus_out_reg_n_0_[9]} {eMMC_controller_inst0/Device_data_bus_out_reg_n_0_[0]} {eMMC_controller_inst0/Device_data_bus_out_reg_n_0_[11]} {eMMC_controller_inst0/Device_data_bus_out_reg_n_0_[13]} {eMMC_controller_inst0/Device_data_bus_out_reg_n_0_[15]} {eMMC_controller_inst0/Device_data_bus_out_reg_n_0_[2]} {eMMC_controller_inst0/Device_data_bus_out_reg_n_0_[4]} {eMMC_controller_inst0/Device_data_bus_out_reg_n_0_[6]} {eMMC_controller_inst0/Device_data_bus_out_reg_n_0_[8]}]]
+delete_debug_port [get_debug_ports {u_ila_0/probe6 }]
+delete_debug_port [get_debug_ports {u_ila_0/probe3 }]
+show_objects -name find_1 [get_nets -hierarchical -top_net_of_hierarchical_group -filter { NAME =~  "*rd_data_final*" } ]
+set_property mark_debug true [get_nets [list {eMMC_controller_inst0/rd_data_final[3]} {eMMC_controller_inst0/rd_data_final[4]} {eMMC_controller_inst0/rd_data_final[11]} {eMMC_controller_inst0/rd_data_final[14]} {eMMC_controller_inst0/rd_data_final[1]} {eMMC_controller_inst0/rd_data_final[9]} {eMMC_controller_inst0/rd_data_final[15]} {eMMC_controller_inst0/rd_data_final[2]} {eMMC_controller_inst0/rd_data_final[6]} {eMMC_controller_inst0/rd_data_final[10]} {eMMC_controller_inst0/rd_data_final[0]} {eMMC_controller_inst0/rd_data_final[5]} {eMMC_controller_inst0/rd_data_final[7]} {eMMC_controller_inst0/rd_data_final[8]} {eMMC_controller_inst0/rd_data_final[12]} {eMMC_controller_inst0/rd_data_final[13]}]]
+show_objects -name find_2 [get_nets -hierarchical -top_net_of_hierarchical_group -filter { NAME =~  "*fifo_wr_en*" } ]
+set_property mark_debug true [get_nets [list eMMC_controller_inst0/fifo_wr_en]]
+create_debug_port u_ila_0 probe
+create_debug_port u_ila_0 probe
+set_property port_width 16 [get_debug_ports u_ila_0/probe9]
+connect_debug_port u_ila_0/probe9 [get_nets [list {eMMC_controller_inst0/rd_data_final[0]} {eMMC_controller_inst0/rd_data_final[1]} {eMMC_controller_inst0/rd_data_final[2]} {eMMC_controller_inst0/rd_data_final[3]} {eMMC_controller_inst0/rd_data_final[4]} {eMMC_controller_inst0/rd_data_final[5]} {eMMC_controller_inst0/rd_data_final[6]} {eMMC_controller_inst0/rd_data_final[7]} {eMMC_controller_inst0/rd_data_final[8]} {eMMC_controller_inst0/rd_data_final[9]} {eMMC_controller_inst0/rd_data_final[10]} {eMMC_controller_inst0/rd_data_final[11]} {eMMC_controller_inst0/rd_data_final[12]} {eMMC_controller_inst0/rd_data_final[13]} {eMMC_controller_inst0/rd_data_final[14]} {eMMC_controller_inst0/rd_data_final[15]} ]]
+connect_debug_port u_ila_0/probe8 [get_nets [list eMMC_controller_inst0/fifo_wr_en ]] -channel_start_index 0
+save_constraints
+launch_runs impl_4 -to_step write_bitstream -jobs 2
+wait_on_run impl_4
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {D:/VivadoProjects/eMMC_Controller_fifo.xpr/eMMC_Controller_4.6.1_tuning.xpr/eMMC_Controller/eMMC_Controller.runs/impl_4/Test_eMMC_Controller.bit} [lindex [get_hw_devices] 1]
+set_property PROBES.FILE {D:/VivadoProjects/eMMC_Controller_fifo.xpr/eMMC_Controller_4.6.1_tuning.xpr/eMMC_Controller/eMMC_Controller.runs/impl_4/debug_nets.ltx} [lindex [get_hw_devices] 1]
+current_hw_device [lindex [get_hw_devices] 1]
+refresh_hw_device [lindex [get_hw_devices] 1]
+set_property PROBES.FILE {D:/VivadoProjects/eMMC_Controller_fifo.xpr/eMMC_Controller_4.6.1_tuning.xpr/eMMC_Controller/eMMC_Controller.runs/impl_4/debug_nets.ltx} [lindex [get_hw_devices] 1]
+set_property PROGRAM.FILE {D:/VivadoProjects/eMMC_Controller_fifo.xpr/eMMC_Controller_4.6.1_tuning.xpr/eMMC_Controller/eMMC_Controller.runs/impl_4/Test_eMMC_Controller.bit} [lindex [get_hw_devices] 1]
+program_hw_devices [lindex [get_hw_devices] 1]
+refresh_hw_device [lindex [get_hw_devices] 1]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}] -trigger_now
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}] -trigger_now
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]]
+set_property TRIGGER_COMPARE_VALUE eq5'h0C [get_hw_probes eMMC_controller_inst0/Steps_Curr_State -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}] -trigger_now
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
+set_property TRIGGER_COMPARE_VALUE eq5'h0B [get_hw_probes eMMC_controller_inst0/Steps_Curr_State -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]]
+wait_on_hw_ila -timeout 0 [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
+upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}] -trigger_now
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]]
+save_wave_config {D:/VivadoProjects/eMMC_Controller_fifo.xpr/eMMC_Controller_4.6.1_tuning.xpr/eMMC_Controller/eMMC_Controller.hw/hw_1/wave/hw_ila_data_1/hw_ila_data_1.wcfg}
+close_hw
+show_objects -name find_1 [get_nets -hierarchical -top_net_of_hierarchical_group -filter { NAME =~  "*HS400E_write_end*" } ]
+close_design
+reset_run synth_4
+launch_runs synth_4 -jobs 2
+wait_on_run synth_4
+open_run synth_4 -name synth_4
+launch_runs impl_4 -to_step write_bitstream -jobs 2
+wait_on_run impl_4
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {D:/VivadoProjects/eMMC_Controller_fifo.xpr/eMMC_Controller_4.6.1_tuning.xpr/eMMC_Controller/eMMC_Controller.runs/impl_4/Test_eMMC_Controller.bit} [lindex [get_hw_devices] 1]
+set_property PROBES.FILE {D:/VivadoProjects/eMMC_Controller_fifo.xpr/eMMC_Controller_4.6.1_tuning.xpr/eMMC_Controller/eMMC_Controller.runs/impl_4/debug_nets.ltx} [lindex [get_hw_devices] 1]
+current_hw_device [lindex [get_hw_devices] 1]
+refresh_hw_device [lindex [get_hw_devices] 1]
+set_property PROBES.FILE {D:/VivadoProjects/eMMC_Controller_fifo.xpr/eMMC_Controller_4.6.1_tuning.xpr/eMMC_Controller/eMMC_Controller.runs/impl_4/debug_nets.ltx} [lindex [get_hw_devices] 1]
+set_property PROGRAM.FILE {D:/VivadoProjects/eMMC_Controller_fifo.xpr/eMMC_Controller_4.6.1_tuning.xpr/eMMC_Controller/eMMC_Controller.runs/impl_4/Test_eMMC_Controller.bit} [lindex [get_hw_devices] 1]
+program_hw_devices [lindex [get_hw_devices] 1]
+refresh_hw_device [lindex [get_hw_devices] 1]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}] -trigger_now
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}] -trigger_now
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]]
+set_property TRIGGER_COMPARE_VALUE eq5'h11 [get_hw_probes eMMC_controller_inst0/Steps_Curr_State -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]]
+add_wave -into {hw_ila_data_1.wcfg} -radix hex {eMMC_controller_inst0/rd_data_final}
+add_wave -into {hw_ila_data_1.wcfg} -radix hex {eMMC_controller_inst0/fifo_wr_en}
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}] -trigger_now
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]]
+set_property TRIGGER_COMPARE_VALUE eq5'h0D [get_hw_probes eMMC_controller_inst0/Steps_Curr_State -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]]
+set_property TRIGGER_COMPARE_VALUE eq8'hFD [get_hw_probes eMMC_controller_inst0/Device_data_temp_p -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]]
+set_property TRIGGER_COMPARE_VALUE eq8'hFC [get_hw_probes eMMC_controller_inst0/Device_data_temp_p -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]]
+set_property TRIGGER_COMPARE_VALUE eq8'hFE [get_hw_probes eMMC_controller_inst0/Device_data_temp_p -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]]
+set_property TRIGGER_COMPARE_VALUE eq8'hFE [get_hw_probes eMMC_controller_inst0/Device_data_temp_n -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]]
+save_wave_config {D:/VivadoProjects/eMMC_Controller_fifo.xpr/eMMC_Controller_4.6.1_tuning.xpr/eMMC_Controller/eMMC_Controller.hw/hw_1/wave/hw_ila_data_1/hw_ila_data_1.wcfg}
+close_hw
+close_design
+reset_run synth_4
+launch_runs synth_4 -jobs 2
+wait_on_run synth_4
+open_run synth_4 -name synth_4
+show_objects -name find_1 [get_nets -hierarchical -top_net_of_hierarchical_group -filter { NAME =~  "*Fifo_bit_counter*" } ]
+delete_debug_port [get_debug_ports {u_ila_0/probe2 }]
+show_objects -name find_1 [get_nets -hierarchical -top_net_of_hierarchical_group -filter { NAME =~  "*Fifo_bit_counter*" } ]
+set_property mark_debug true [get_nets [list {eMMC_controller_inst0/Fifo_bit_counter_reg__0[0]} {eMMC_controller_inst0/Fifo_bit_counter_reg__0[1]} {eMMC_controller_inst0/Fifo_bit_counter_reg__0[2]} {eMMC_controller_inst0/Fifo_bit_counter_reg__0[3]} {eMMC_controller_inst0/Fifo_bit_counter_reg__0[5]} {eMMC_controller_inst0/Fifo_bit_counter_reg__0[7]} {eMMC_controller_inst0/Fifo_bit_counter_reg__0[4]} {eMMC_controller_inst0/Fifo_bit_counter_reg__0[6]} {eMMC_controller_inst0/Fifo_bit_counter_reg__0[8]}]]
+create_debug_port u_ila_0 probe
+set_property port_width 9 [get_debug_ports u_ila_0/probe9]
+connect_debug_port u_ila_0/probe9 [get_nets [list {eMMC_controller_inst0/Fifo_bit_counter_reg__0[0]} {eMMC_controller_inst0/Fifo_bit_counter_reg__0[1]} {eMMC_controller_inst0/Fifo_bit_counter_reg__0[2]} {eMMC_controller_inst0/Fifo_bit_counter_reg__0[3]} {eMMC_controller_inst0/Fifo_bit_counter_reg__0[4]} {eMMC_controller_inst0/Fifo_bit_counter_reg__0[5]} {eMMC_controller_inst0/Fifo_bit_counter_reg__0[6]} {eMMC_controller_inst0/Fifo_bit_counter_reg__0[7]} {eMMC_controller_inst0/Fifo_bit_counter_reg__0[8]} ]]
+show_objects -name find_1 [get_nets -hierarchical -top_net_of_hierarchical_group -filter { NAME =~  "*fifo_wr_start*" } ]
+set_property mark_debug true [get_nets [list eMMC_controller_inst0/fifo_wr_start]]
+create_debug_port u_ila_0 probe
+connect_debug_port u_ila_0/probe10 [get_nets [list eMMC_controller_inst0/fifo_wr_start ]]
+save_constraints
+launch_runs impl_4 -to_step write_bitstream -jobs 2
+wait_on_run impl_4
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {D:/VivadoProjects/eMMC_Controller_fifo.xpr/eMMC_Controller_4.6.1_tuning.xpr/eMMC_Controller/eMMC_Controller.runs/impl_4/Test_eMMC_Controller.bit} [lindex [get_hw_devices] 1]
+set_property PROBES.FILE {D:/VivadoProjects/eMMC_Controller_fifo.xpr/eMMC_Controller_4.6.1_tuning.xpr/eMMC_Controller/eMMC_Controller.runs/impl_4/debug_nets.ltx} [lindex [get_hw_devices] 1]
+current_hw_device [lindex [get_hw_devices] 1]
+refresh_hw_device [lindex [get_hw_devices] 1]
+set_property PROBES.FILE {D:/VivadoProjects/eMMC_Controller_fifo.xpr/eMMC_Controller_4.6.1_tuning.xpr/eMMC_Controller/eMMC_Controller.runs/impl_4/debug_nets.ltx} [lindex [get_hw_devices] 1]
+set_property PROGRAM.FILE {D:/VivadoProjects/eMMC_Controller_fifo.xpr/eMMC_Controller_4.6.1_tuning.xpr/eMMC_Controller/eMMC_Controller.runs/impl_4/Test_eMMC_Controller.bit} [lindex [get_hw_devices] 1]
+program_hw_devices [lindex [get_hw_devices] 1]
+refresh_hw_device [lindex [get_hw_devices] 1]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}] -trigger_now
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}] -trigger_now
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}] -trigger_now
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}] -trigger_now
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}] -trigger_now
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}] -trigger_now
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]]
+set_property TRIGGER_COMPARE_VALUE eq5'hXX [get_hw_probes eMMC_controller_inst0/Steps_Curr_State -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]]
+set_property TRIGGER_COMPARE_VALUE eq8'hXX [get_hw_probes eMMC_controller_inst0/Device_data_temp_p -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]]
+set_property TRIGGER_COMPARE_VALUE eq8'hXX [get_hw_probes eMMC_controller_inst0/Device_data_temp_n -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]]
+set_property TRIGGER_COMPARE_VALUE eq5'h0B [get_hw_probes eMMC_controller_inst0/Steps_Curr_State -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]]
+close_hw
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {D:/VivadoProjects/eMMC_Controller_fifo.xpr/eMMC_Controller_4.6.1_tuning.xpr/eMMC_Controller/eMMC_Controller.runs/impl_4/Test_eMMC_Controller.bit} [lindex [get_hw_devices] 1]
+set_property PROBES.FILE {D:/VivadoProjects/eMMC_Controller_fifo.xpr/eMMC_Controller_4.6.1_tuning.xpr/eMMC_Controller/eMMC_Controller.runs/impl_4/debug_nets.ltx} [lindex [get_hw_devices] 1]
+current_hw_device [lindex [get_hw_devices] 1]
+refresh_hw_device [lindex [get_hw_devices] 1]
+set_property PROBES.FILE {D:/VivadoProjects/eMMC_Controller_fifo.xpr/eMMC_Controller_4.6.1_tuning.xpr/eMMC_Controller/eMMC_Controller.runs/impl_4/debug_nets.ltx} [lindex [get_hw_devices] 1]
+set_property PROGRAM.FILE {D:/VivadoProjects/eMMC_Controller_fifo.xpr/eMMC_Controller_4.6.1_tuning.xpr/eMMC_Controller/eMMC_Controller.runs/impl_4/Test_eMMC_Controller.bit} [lindex [get_hw_devices] 1]
+program_hw_devices [lindex [get_hw_devices] 1]
+refresh_hw_device [lindex [get_hw_devices] 1]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}] -trigger_now
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]]
+close_hw
+reset_run synth_4
+launch_runs synth_4 -jobs 2
+wait_on_run synth_4
+close_design
+open_run synth_4 -name synth_4
+launch_runs impl_4 -to_step write_bitstream -jobs 2
+wait_on_run impl_4
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {D:/VivadoProjects/eMMC_Controller_fifo.xpr/eMMC_Controller_4.6.1_tuning.xpr/eMMC_Controller/eMMC_Controller.runs/impl_4/Test_eMMC_Controller.bit} [lindex [get_hw_devices] 1]
+set_property PROBES.FILE {D:/VivadoProjects/eMMC_Controller_fifo.xpr/eMMC_Controller_4.6.1_tuning.xpr/eMMC_Controller/eMMC_Controller.runs/impl_4/debug_nets.ltx} [lindex [get_hw_devices] 1]
+current_hw_device [lindex [get_hw_devices] 1]
+refresh_hw_device [lindex [get_hw_devices] 1]
+set_property PROBES.FILE {D:/VivadoProjects/eMMC_Controller_fifo.xpr/eMMC_Controller_4.6.1_tuning.xpr/eMMC_Controller/eMMC_Controller.runs/impl_4/debug_nets.ltx} [lindex [get_hw_devices] 1]
+set_property PROGRAM.FILE {D:/VivadoProjects/eMMC_Controller_fifo.xpr/eMMC_Controller_4.6.1_tuning.xpr/eMMC_Controller/eMMC_Controller.runs/impl_4/Test_eMMC_Controller.bit} [lindex [get_hw_devices] 1]
+program_hw_devices [lindex [get_hw_devices] 1]
+refresh_hw_device [lindex [get_hw_devices] 1]
+set_property PROBES.FILE {D:/VivadoProjects/eMMC_Controller_fifo.xpr/eMMC_Controller_4.6.1_tuning.xpr/eMMC_Controller/eMMC_Controller.runs/impl_4/debug_nets.ltx} [lindex [get_hw_devices] 1]
+set_property PROGRAM.FILE {D:/VivadoProjects/eMMC_Controller_fifo.xpr/eMMC_Controller_4.6.1_tuning.xpr/eMMC_Controller/eMMC_Controller.runs/impl_4/Test_eMMC_Controller.bit} [lindex [get_hw_devices] 1]
+program_hw_devices [lindex [get_hw_devices] 1]
+refresh_hw_device [lindex [get_hw_devices] 1]
+set_property PROBES.FILE {D:/VivadoProjects/eMMC_Controller_fifo.xpr/eMMC_Controller_4.6.1_tuning.xpr/eMMC_Controller/eMMC_Controller.runs/impl_4/debug_nets.ltx} [lindex [get_hw_devices] 1]
+set_property PROGRAM.FILE {D:/VivadoProjects/eMMC_Controller_fifo.xpr/eMMC_Controller_4.6.1_tuning.xpr/eMMC_Controller/eMMC_Controller.runs/impl_4/Test_eMMC_Controller.bit} [lindex [get_hw_devices] 1]
+program_hw_devices [lindex [get_hw_devices] 1]
+close_hw
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {D:/VivadoProjects/eMMC_Controller_fifo.xpr/eMMC_Controller_4.6.1_tuning.xpr/eMMC_Controller/eMMC_Controller.runs/impl_4/Test_eMMC_Controller.bit} [lindex [get_hw_devices] 1]
+set_property PROBES.FILE {D:/VivadoProjects/eMMC_Controller_fifo.xpr/eMMC_Controller_4.6.1_tuning.xpr/eMMC_Controller/eMMC_Controller.runs/impl_4/debug_nets.ltx} [lindex [get_hw_devices] 1]
+current_hw_device [lindex [get_hw_devices] 1]
+refresh_hw_device [lindex [get_hw_devices] 1]
+set_property PROBES.FILE {D:/VivadoProjects/eMMC_Controller_fifo.xpr/eMMC_Controller_4.6.1_tuning.xpr/eMMC_Controller/eMMC_Controller.runs/impl_4/debug_nets.ltx} [lindex [get_hw_devices] 1]
+set_property PROGRAM.FILE {D:/VivadoProjects/eMMC_Controller_fifo.xpr/eMMC_Controller_4.6.1_tuning.xpr/eMMC_Controller/eMMC_Controller.runs/impl_4/Test_eMMC_Controller.bit} [lindex [get_hw_devices] 1]
+program_hw_devices [lindex [get_hw_devices] 1]
+refresh_hw_device [lindex [get_hw_devices] 1]
+refresh_hw_device [lindex [get_hw_devices] 1]
+set_property PROBES.FILE {D:/VivadoProjects/eMMC_Controller_fifo.xpr/eMMC_Controller_4.6.1_tuning.xpr/eMMC_Controller/eMMC_Controller.runs/impl_4/debug_nets.ltx} [lindex [get_hw_devices] 1]
+set_property PROGRAM.FILE {D:/VivadoProjects/eMMC_Controller_fifo.xpr/eMMC_Controller_4.6.1_tuning.xpr/eMMC_Controller/eMMC_Controller.runs/impl_4/Test_eMMC_Controller.bit} [lindex [get_hw_devices] 1]
+program_hw_devices [lindex [get_hw_devices] 1]
+refresh_hw_device [lindex [get_hw_devices] 1]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}] -trigger_now
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}] -trigger_now
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
+wait_on_hw_ila -timeout 0 [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
+upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}] -trigger_now
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]]
+set_property TRIGGER_COMPARE_VALUE eq5'h0A [get_hw_probes eMMC_controller_inst0/Steps_Curr_State -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}] -trigger_now
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]]
+set_property TRIGGER_COMPARE_VALUE eq5'h17 [get_hw_probes eMMC_controller_inst0/Steps_Curr_State -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
+wait_on_hw_ila -timeout 0 [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
+upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}] -trigger_now
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]]
+reset_run synth_4
+close_hw
+close_design
+launch_runs impl_4 -to_step write_bitstream -jobs 2
+wait_on_run impl_4
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {D:/VivadoProjects/eMMC_Controller_fifo.xpr/eMMC_Controller_4.6.1_tuning.xpr/eMMC_Controller/eMMC_Controller.runs/impl_4/Test_eMMC_Controller.bit} [lindex [get_hw_devices] 1]
+set_property PROBES.FILE {D:/VivadoProjects/eMMC_Controller_fifo.xpr/eMMC_Controller_4.6.1_tuning.xpr/eMMC_Controller/eMMC_Controller.runs/impl_4/debug_nets.ltx} [lindex [get_hw_devices] 1]
+current_hw_device [lindex [get_hw_devices] 1]
+refresh_hw_device [lindex [get_hw_devices] 1]
+set_property PROBES.FILE {D:/VivadoProjects/eMMC_Controller_fifo.xpr/eMMC_Controller_4.6.1_tuning.xpr/eMMC_Controller/eMMC_Controller.runs/impl_4/debug_nets.ltx} [lindex [get_hw_devices] 1]
+set_property PROGRAM.FILE {D:/VivadoProjects/eMMC_Controller_fifo.xpr/eMMC_Controller_4.6.1_tuning.xpr/eMMC_Controller/eMMC_Controller.runs/impl_4/Test_eMMC_Controller.bit} [lindex [get_hw_devices] 1]
+program_hw_devices [lindex [get_hw_devices] 1]
+refresh_hw_device [lindex [get_hw_devices] 1]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}] -trigger_now
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]]
+set_property TRIGGER_COMPARE_VALUE eq5'h10 [get_hw_probes eMMC_controller_inst0/Steps_Curr_State -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]]
+add_wave -into {hw_ila_data_1.wcfg} -radix hex {eMMC_controller_inst0/Fifo_bit_counter_reg__0}
+add_wave -into {hw_ila_data_1.wcfg} -radix hex {eMMC_controller_inst0/fifo_wr_start}
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}] -trigger_now
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]]
+save_wave_config {D:/VivadoProjects/eMMC_Controller_fifo.xpr/eMMC_Controller_4.6.1_tuning.xpr/eMMC_Controller/eMMC_Controller.hw/hw_1/wave/hw_ila_data_1/hw_ila_data_1.wcfg}
+close_hw
+close_project
+open_project D:/VivadoProjects/eMMC_Controller_fifo.xpr/eMMC_Controller_4.6.1_tuning.xpr/eMMC_Controller/eMMC_Controller.xpr
+set_property -dict [list CONFIG.Performance_Options {First_Word_Fall_Through} CONFIG.Use_Extra_Logic {true} CONFIG.Data_Count_Width {9} CONFIG.Write_Data_Count_Width {9} CONFIG.Read_Data_Count_Width {9} CONFIG.Full_Threshold_Assert_Value {255} CONFIG.Full_Threshold_Negate_Value {254} CONFIG.Empty_Threshold_Assert_Value {4} CONFIG.Empty_Threshold_Negate_Value {5}] [get_ips Read_data512B_buffer]
+generate_target all [get_files  D:/VivadoProjects/eMMC_Controller_fifo.xpr/eMMC_Controller_4.6.1_tuning.xpr/eMMC_Controller/eMMC_Controller.srcs/sources_1/ip/Read_data512B_buffer/Read_data512B_buffer.xci]
+export_ip_user_files -of_objects [get_files D:/VivadoProjects/eMMC_Controller_fifo.xpr/eMMC_Controller_4.6.1_tuning.xpr/eMMC_Controller/eMMC_Controller.srcs/sources_1/ip/Read_data512B_buffer/Read_data512B_buffer.xci] -no_script -force -quiet
+reset_run Read_data512B_buffer_synth_1
+launch_run -jobs 2 Read_data512B_buffer_synth_1
+export_simulation -of_objects [get_files D:/VivadoProjects/eMMC_Controller_fifo.xpr/eMMC_Controller_4.6.1_tuning.xpr/eMMC_Controller/eMMC_Controller.srcs/sources_1/ip/Read_data512B_buffer/Read_data512B_buffer.xci] -directory D:/VivadoProjects/eMMC_Controller_fifo.xpr/eMMC_Controller_4.6.1_tuning.xpr/eMMC_Controller/eMMC_Controller.ip_user_files/sim_scripts -force -quiet
+reset_run synth_4
+launch_runs impl_4 -to_step write_bitstream -jobs 2
+wait_on_run impl_4
+open_hw
+connect_hw_server
+open_hw_target
+close_hw
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {D:/VivadoProjects/eMMC_Controller_fifo.xpr/eMMC_Controller_4.6.1_tuning.xpr/eMMC_Controller/eMMC_Controller.runs/impl_4/Test_eMMC_Controller.bit} [lindex [get_hw_devices] 1]
+set_property PROBES.FILE {D:/VivadoProjects/eMMC_Controller_fifo.xpr/eMMC_Controller_4.6.1_tuning.xpr/eMMC_Controller/eMMC_Controller.runs/impl_4/debug_nets.ltx} [lindex [get_hw_devices] 1]
+current_hw_device [lindex [get_hw_devices] 1]
+refresh_hw_device [lindex [get_hw_devices] 1]
+set_property PROBES.FILE {D:/VivadoProjects/eMMC_Controller_fifo.xpr/eMMC_Controller_4.6.1_tuning.xpr/eMMC_Controller/eMMC_Controller.runs/impl_4/debug_nets.ltx} [lindex [get_hw_devices] 1]
+set_property PROGRAM.FILE {D:/VivadoProjects/eMMC_Controller_fifo.xpr/eMMC_Controller_4.6.1_tuning.xpr/eMMC_Controller/eMMC_Controller.runs/impl_4/Test_eMMC_Controller.bit} [lindex [get_hw_devices] 1]
+program_hw_devices [lindex [get_hw_devices] 1]
+refresh_hw_device [lindex [get_hw_devices] 1]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}] -trigger_now
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]]
+set_property TRIGGER_COMPARE_VALUE eq5'h10 [get_hw_probes eMMC_controller_inst0/Steps_Curr_State -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]]
+close_hw
+reset_run synth_4
+launch_runs impl_4 -to_step write_bitstream -jobs 2
+wait_on_run impl_4
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {D:/VivadoProjects/eMMC_Controller_fifo.xpr/eMMC_Controller_4.6.1_tuning.xpr/eMMC_Controller/eMMC_Controller.runs/impl_4/Test_eMMC_Controller.bit} [lindex [get_hw_devices] 1]
+set_property PROBES.FILE {D:/VivadoProjects/eMMC_Controller_fifo.xpr/eMMC_Controller_4.6.1_tuning.xpr/eMMC_Controller/eMMC_Controller.runs/impl_4/debug_nets.ltx} [lindex [get_hw_devices] 1]
+current_hw_device [lindex [get_hw_devices] 1]
+refresh_hw_device [lindex [get_hw_devices] 1]
+set_property PROBES.FILE {D:/VivadoProjects/eMMC_Controller_fifo.xpr/eMMC_Controller_4.6.1_tuning.xpr/eMMC_Controller/eMMC_Controller.runs/impl_4/debug_nets.ltx} [lindex [get_hw_devices] 1]
+set_property PROGRAM.FILE {D:/VivadoProjects/eMMC_Controller_fifo.xpr/eMMC_Controller_4.6.1_tuning.xpr/eMMC_Controller/eMMC_Controller.runs/impl_4/Test_eMMC_Controller.bit} [lindex [get_hw_devices] 1]
+program_hw_devices [lindex [get_hw_devices] 1]
+refresh_hw_device [lindex [get_hw_devices] 1]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}] -trigger_now
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]]
+set_property TRIGGER_COMPARE_VALUE eq5'h10 [get_hw_probes eMMC_controller_inst0/Steps_Curr_State -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]]
+save_wave_config {D:/VivadoProjects/eMMC_Controller_fifo.xpr/eMMC_Controller_4.6.1_tuning.xpr/eMMC_Controller/eMMC_Controller.hw/hw_1/wave/hw_ila_data_1/hw_ila_data_1.wcfg}
+close_hw
+reset_run synth_4
+launch_runs impl_4 -to_step write_bitstream -jobs 2
+wait_on_run impl_4
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {D:/VivadoProjects/eMMC_Controller_fifo.xpr/eMMC_Controller_4.6.1_tuning.xpr/eMMC_Controller/eMMC_Controller.runs/impl_4/Test_eMMC_Controller.bit} [lindex [get_hw_devices] 1]
+set_property PROBES.FILE {D:/VivadoProjects/eMMC_Controller_fifo.xpr/eMMC_Controller_4.6.1_tuning.xpr/eMMC_Controller/eMMC_Controller.runs/impl_4/debug_nets.ltx} [lindex [get_hw_devices] 1]
+current_hw_device [lindex [get_hw_devices] 1]
+refresh_hw_device [lindex [get_hw_devices] 1]
+set_property PROBES.FILE {D:/VivadoProjects/eMMC_Controller_fifo.xpr/eMMC_Controller_4.6.1_tuning.xpr/eMMC_Controller/eMMC_Controller.runs/impl_4/debug_nets.ltx} [lindex [get_hw_devices] 1]
+set_property PROGRAM.FILE {D:/VivadoProjects/eMMC_Controller_fifo.xpr/eMMC_Controller_4.6.1_tuning.xpr/eMMC_Controller/eMMC_Controller.runs/impl_4/Test_eMMC_Controller.bit} [lindex [get_hw_devices] 1]
+program_hw_devices [lindex [get_hw_devices] 1]
+refresh_hw_device [lindex [get_hw_devices] 1]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}] -trigger_now
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]]
+set_property TRIGGER_COMPARE_VALUE eq5'h10 [get_hw_probes eMMC_controller_inst0/Steps_Curr_State -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]]
+add_wave -into {hw_ila_data_1.wcfg} -radix hex {eMMC_controller_inst0/fifo_wr_start}
+save_wave_config {D:/VivadoProjects/eMMC_Controller_fifo.xpr/eMMC_Controller_4.6.1_tuning.xpr/eMMC_Controller/eMMC_Controller.hw/hw_1/wave/hw_ila_data_1/hw_ila_data_1.wcfg}
+close_hw
+reset_run synth_4
+launch_runs impl_4 -to_step write_bitstream -jobs 2
+wait_on_run impl_4
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {D:/VivadoProjects/eMMC_Controller_fifo.xpr/eMMC_Controller_4.6.1_tuning.xpr/eMMC_Controller/eMMC_Controller.runs/impl_4/Test_eMMC_Controller.bit} [lindex [get_hw_devices] 1]
+set_property PROBES.FILE {D:/VivadoProjects/eMMC_Controller_fifo.xpr/eMMC_Controller_4.6.1_tuning.xpr/eMMC_Controller/eMMC_Controller.runs/impl_4/debug_nets.ltx} [lindex [get_hw_devices] 1]
+current_hw_device [lindex [get_hw_devices] 1]
+refresh_hw_device [lindex [get_hw_devices] 1]
+set_property PROBES.FILE {D:/VivadoProjects/eMMC_Controller_fifo.xpr/eMMC_Controller_4.6.1_tuning.xpr/eMMC_Controller/eMMC_Controller.runs/impl_4/debug_nets.ltx} [lindex [get_hw_devices] 1]
+set_property PROGRAM.FILE {D:/VivadoProjects/eMMC_Controller_fifo.xpr/eMMC_Controller_4.6.1_tuning.xpr/eMMC_Controller/eMMC_Controller.runs/impl_4/Test_eMMC_Controller.bit} [lindex [get_hw_devices] 1]
+program_hw_devices [lindex [get_hw_devices] 1]
+refresh_hw_device [lindex [get_hw_devices] 1]
+refresh_hw_device [lindex [get_hw_devices] 1]
+set_property PROBES.FILE {D:/VivadoProjects/eMMC_Controller_fifo.xpr/eMMC_Controller_4.6.1_tuning.xpr/eMMC_Controller/eMMC_Controller.runs/impl_4/debug_nets.ltx} [lindex [get_hw_devices] 1]
+set_property PROGRAM.FILE {D:/VivadoProjects/eMMC_Controller_fifo.xpr/eMMC_Controller_4.6.1_tuning.xpr/eMMC_Controller/eMMC_Controller.runs/impl_4/Test_eMMC_Controller.bit} [lindex [get_hw_devices] 1]
+program_hw_devices [lindex [get_hw_devices] 1]
+refresh_hw_device [lindex [get_hw_devices] 1]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}] -trigger_now
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}] -trigger_now
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}] -trigger_now
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}] -trigger_now
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}] -trigger_now
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]]
+set_property TRIGGER_COMPARE_VALUE eq5'h10 [get_hw_probes eMMC_controller_inst0/Steps_Curr_State -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]]
+close_hw
+reset_run synth_4
+launch_runs impl_4 -to_step write_bitstream -jobs 2
+wait_on_run impl_4
+reset_run synth_4
+launch_runs impl_4 -to_step write_bitstream -jobs 2
+wait_on_run impl_4
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {D:/VivadoProjects/eMMC_Controller_fifo.xpr/eMMC_Controller_4.6.1_tuning.xpr/eMMC_Controller/eMMC_Controller.runs/impl_4/Test_eMMC_Controller.bit} [lindex [get_hw_devices] 1]
+set_property PROBES.FILE {D:/VivadoProjects/eMMC_Controller_fifo.xpr/eMMC_Controller_4.6.1_tuning.xpr/eMMC_Controller/eMMC_Controller.runs/impl_4/debug_nets.ltx} [lindex [get_hw_devices] 1]
+current_hw_device [lindex [get_hw_devices] 1]
+refresh_hw_device [lindex [get_hw_devices] 1]
+set_property PROBES.FILE {D:/VivadoProjects/eMMC_Controller_fifo.xpr/eMMC_Controller_4.6.1_tuning.xpr/eMMC_Controller/eMMC_Controller.runs/impl_4/debug_nets.ltx} [lindex [get_hw_devices] 1]
+set_property PROGRAM.FILE {D:/VivadoProjects/eMMC_Controller_fifo.xpr/eMMC_Controller_4.6.1_tuning.xpr/eMMC_Controller/eMMC_Controller.runs/impl_4/Test_eMMC_Controller.bit} [lindex [get_hw_devices] 1]
+program_hw_devices [lindex [get_hw_devices] 1]
+refresh_hw_device [lindex [get_hw_devices] 1]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}] -trigger_now
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}] -trigger_now
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}] -trigger_now
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}] -trigger_now
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}] -trigger_now
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}] -trigger_now
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}] -trigger_now
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}] -trigger_now
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}] -trigger_now
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}] -trigger_now
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]]
+set_property TRIGGER_COMPARE_VALUE eq5'h10 [get_hw_probes eMMC_controller_inst0/Steps_Curr_State -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}] -trigger_now
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]]
+close_hw
+reset_run synth_4
+launch_runs impl_4 -to_step write_bitstream -jobs 2
+wait_on_run impl_4
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {D:/VivadoProjects/eMMC_Controller_fifo.xpr/eMMC_Controller_4.6.1_tuning.xpr/eMMC_Controller/eMMC_Controller.runs/impl_4/Test_eMMC_Controller.bit} [lindex [get_hw_devices] 1]
+set_property PROBES.FILE {D:/VivadoProjects/eMMC_Controller_fifo.xpr/eMMC_Controller_4.6.1_tuning.xpr/eMMC_Controller/eMMC_Controller.runs/impl_4/debug_nets.ltx} [lindex [get_hw_devices] 1]
+current_hw_device [lindex [get_hw_devices] 1]
+refresh_hw_device [lindex [get_hw_devices] 1]
+set_property PROBES.FILE {D:/VivadoProjects/eMMC_Controller_fifo.xpr/eMMC_Controller_4.6.1_tuning.xpr/eMMC_Controller/eMMC_Controller.runs/impl_4/debug_nets.ltx} [lindex [get_hw_devices] 1]
+set_property PROGRAM.FILE {D:/VivadoProjects/eMMC_Controller_fifo.xpr/eMMC_Controller_4.6.1_tuning.xpr/eMMC_Controller/eMMC_Controller.runs/impl_4/Test_eMMC_Controller.bit} [lindex [get_hw_devices] 1]
+program_hw_devices [lindex [get_hw_devices] 1]
+refresh_hw_device [lindex [get_hw_devices] 1]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}] -trigger_now
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}] -trigger_now
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}] -trigger_now
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}] -trigger_now
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]]
+close_hw
+archive_project D:/VivadoProjects/eMMC/eMMC_Controller_4.7.xpr.zip -temp_dir {C:/Users/Wu Lizhou/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-138080-WuLizhou-PC} -force -exclude_run_results -include_config_settings
+reset_run synth_4
+launch_runs synth_4 -jobs 2
+wait_on_run synth_4
+reset_run synth_4
+launch_runs synth_4 -jobs 2
+wait_on_run synth_4
+open_run synth_4 -name synth_4
+launch_runs impl_4 -to_step write_bitstream -jobs 2
+delete_debug_port [get_debug_ports {u_ila_0/probe7 }]
+save_constraints
+launch_runs impl_4 -to_step write_bitstream -jobs 2
+wait_on_run impl_4
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {D:/VivadoProjects/eMMC_Controller_fifo.xpr/eMMC_Controller_4.6.1_tuning.xpr/eMMC_Controller/eMMC_Controller.runs/impl_4/Test_eMMC_Controller.bit} [lindex [get_hw_devices] 1]
+set_property PROBES.FILE {D:/VivadoProjects/eMMC_Controller_fifo.xpr/eMMC_Controller_4.6.1_tuning.xpr/eMMC_Controller/eMMC_Controller.runs/impl_4/debug_nets.ltx} [lindex [get_hw_devices] 1]
+current_hw_device [lindex [get_hw_devices] 1]
+refresh_hw_device [lindex [get_hw_devices] 1]
+set_property PROBES.FILE {D:/VivadoProjects/eMMC_Controller_fifo.xpr/eMMC_Controller_4.6.1_tuning.xpr/eMMC_Controller/eMMC_Controller.runs/impl_4/debug_nets.ltx} [lindex [get_hw_devices] 1]
+set_property PROGRAM.FILE {D:/VivadoProjects/eMMC_Controller_fifo.xpr/eMMC_Controller_4.6.1_tuning.xpr/eMMC_Controller/eMMC_Controller.runs/impl_4/Test_eMMC_Controller.bit} [lindex [get_hw_devices] 1]
+program_hw_devices [lindex [get_hw_devices] 1]
+refresh_hw_device [lindex [get_hw_devices] 1]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}] -trigger_now
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}] -trigger_now
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}] -trigger_now
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}] -trigger_now
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}] -trigger_now
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]]
+set_property TRIGGER_COMPARE_VALUE eq5'h10 [get_hw_probes eMMC_controller_inst0/Steps_Curr_State -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]]
+add_wave -into {hw_ila_data_1.wcfg} -radix hex {eMMC_controller_inst0/Fifo_bit_counter_reg__0}
+add_wave -into {hw_ila_data_1.wcfg} -radix hex {u_ila_0_rd_data_final}
+save_wave_config {D:/VivadoProjects/eMMC_Controller_fifo.xpr/eMMC_Controller_4.6.1_tuning.xpr/eMMC_Controller/eMMC_Controller.hw/hw_1/wave/hw_ila_data_1/hw_ila_data_1.wcfg}
+close_hw
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {D:/VivadoProjects/eMMC_Controller_fifo.xpr/eMMC_Controller_4.6.1_tuning.xpr/eMMC_Controller/eMMC_Controller.runs/impl_4/Test_eMMC_Controller.bit} [lindex [get_hw_devices] 1]
+set_property PROBES.FILE {D:/VivadoProjects/eMMC_Controller_fifo.xpr/eMMC_Controller_4.6.1_tuning.xpr/eMMC_Controller/eMMC_Controller.runs/impl_4/debug_nets.ltx} [lindex [get_hw_devices] 1]
+current_hw_device [lindex [get_hw_devices] 1]
+refresh_hw_device [lindex [get_hw_devices] 1]
+set_property PROBES.FILE {D:/VivadoProjects/eMMC_Controller_fifo.xpr/eMMC_Controller_4.6.1_tuning.xpr/eMMC_Controller/eMMC_Controller.runs/impl_4/debug_nets.ltx} [lindex [get_hw_devices] 1]
+set_property PROGRAM.FILE {D:/VivadoProjects/eMMC_Controller_fifo.xpr/eMMC_Controller_4.6.1_tuning.xpr/eMMC_Controller/eMMC_Controller.runs/impl_4/Test_eMMC_Controller.bit} [lindex [get_hw_devices] 1]
+program_hw_devices [lindex [get_hw_devices] 1]
+refresh_hw_device [lindex [get_hw_devices] 1]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]]
+add_wave -into {hw_ila_data_1.wcfg} -radix hex {eMMC_controller_inst0/crc16_check_result}
+add_wave -into {hw_ila_data_1.wcfg} -radix hex {eMMC_controller_inst0/Data_Arriving}
+add_wave -into {hw_ila_data_1.wcfg} -radix hex {eMMC_controller_inst0/rd_data_final}
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]]
+save_wave_config {D:/VivadoProjects/eMMC_Controller_fifo.xpr/eMMC_Controller_4.6.1_tuning.xpr/eMMC_Controller/eMMC_Controller.hw/hw_1/wave/hw_ila_data_1/hw_ila_data_1.wcfg}
+close_hw
+close_design
+reset_run synth_4
+launch_runs synth_4 -jobs 2
+wait_on_run synth_4
+open_run synth_4 -name synth_4
+delete_debug_port [get_debug_ports {u_ila_0/probe5 }]
+set_property mark_debug false [get_nets [list eMMC_controller_inst0/Data_Arriving]]
+save_constraints
+show_objects -name find_1 [get_nets -hierarchical -top_net_of_hierarchical_group -filter { NAME =~  "*Operation_type*" } ]
+show_objects -name find_2 [get_nets -hierarchical -top_net_of_hierarchical_group -filter { NAME =~  "*rd_cmd_temp*" } ]
+show_objects -name find_3 [get_nets -hierarchical -top_net_of_hierarchical_group -filter { NAME =~  "*rd_cmd_temp*" } ]
+set_property mark_debug true [get_nets [list {eMMC_controller_inst0/rd_cmd_temp_reg_n_0_[63]} {eMMC_controller_inst0/rd_cmd_temp_reg_n_0_[62]} {eMMC_controller_inst0/rd_cmd_temp_reg_n_0_[61]}]]
+create_debug_port u_ila_0 probe
+set_property port_width 3 [get_debug_ports u_ila_0/probe9]
+connect_debug_port u_ila_0/probe9 [get_nets [list {eMMC_controller_inst0/rd_cmd_temp_reg_n_0_[62]} {eMMC_controller_inst0/rd_cmd_temp_reg_n_0_[63]} {eMMC_controller_inst0/rd_cmd_temp_reg_n_0_[61]} ]]
+save_constraints
+launch_runs impl_4 -to_step write_bitstream -jobs 2
+wait_on_run impl_4
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {D:/VivadoProjects/eMMC_Controller_fifo.xpr/eMMC_Controller_4.6.1_tuning.xpr/eMMC_Controller/eMMC_Controller.runs/impl_4/Test_eMMC_Controller.bit} [lindex [get_hw_devices] 1]
+set_property PROBES.FILE {D:/VivadoProjects/eMMC_Controller_fifo.xpr/eMMC_Controller_4.6.1_tuning.xpr/eMMC_Controller/eMMC_Controller.runs/impl_4/debug_nets.ltx} [lindex [get_hw_devices] 1]
+current_hw_device [lindex [get_hw_devices] 1]
+refresh_hw_device [lindex [get_hw_devices] 1]
+set_property PROBES.FILE {D:/VivadoProjects/eMMC_Controller_fifo.xpr/eMMC_Controller_4.6.1_tuning.xpr/eMMC_Controller/eMMC_Controller.runs/impl_4/debug_nets.ltx} [lindex [get_hw_devices] 1]
+set_property PROGRAM.FILE {D:/VivadoProjects/eMMC_Controller_fifo.xpr/eMMC_Controller_4.6.1_tuning.xpr/eMMC_Controller/eMMC_Controller.runs/impl_4/Test_eMMC_Controller.bit} [lindex [get_hw_devices] 1]
+program_hw_devices [lindex [get_hw_devices] 1]
+refresh_hw_device [lindex [get_hw_devices] 1]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}] -trigger_now
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]]
+set_property PROBES.FILE {D:/VivadoProjects/eMMC_Controller_fifo.xpr/eMMC_Controller_4.6.1_tuning.xpr/eMMC_Controller/eMMC_Controller.runs/impl_4/debug_nets.ltx} [lindex [get_hw_devices] 1]
+set_property PROGRAM.FILE {D:/VivadoProjects/eMMC_Controller_fifo.xpr/eMMC_Controller_4.6.1_tuning.xpr/eMMC_Controller/eMMC_Controller.runs/impl_4/Test_eMMC_Controller.bit} [lindex [get_hw_devices] 1]
+program_hw_devices [lindex [get_hw_devices] 1]
+refresh_hw_device [lindex [get_hw_devices] 1]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}] -trigger_now
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]]
+add_wave -into {hw_ila_data_1.wcfg} -radix hex {eMMC_controller_inst0/Fifo_bit_counter_reg__0}
+add_wave -into {hw_ila_data_1.wcfg} -radix hex {eMMC_controller_inst0/rd_cmd_temp_reg_n_0_}
+add_wave -into {hw_ila_data_1.wcfg} -radix hex {eMMC_controller_inst0/rd_cmd_temp_reg_n_0__1}
+set_property TRIGGER_COMPARE_VALUE eq2'b00 [get_hw_probes eMMC_controller_inst0/rd_cmd_temp_reg_n_0__1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]]
+set_property TRIGGER_COMPARE_VALUE eq1'b0 [get_hw_probes eMMC_controller_inst0/rd_cmd_temp_reg_n_0_ -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]]
+add_wave -into {hw_ila_data_1.wcfg} -radix hex {eMMC_controller_inst0/fifo_wr_start}
+set_property TRIGGER_COMPARE_VALUE eq1'b1 [get_hw_probes eMMC_controller_inst0/rd_cmd_temp_reg_n_0_ -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]]
+save_wave_config {D:/VivadoProjects/eMMC_Controller_fifo.xpr/eMMC_Controller_4.6.1_tuning.xpr/eMMC_Controller/eMMC_Controller.hw/hw_1/wave/hw_ila_data_1/hw_ila_data_1.wcfg}
+close_hw
+show_objects -name find_1 [get_nets -hierarchical -top_net_of_hierarchical_group -filter { NAME =~  "*rd_data_fifo_out*" } ]
+close_design
+reset_run synth_4
+launch_runs synth_4 -jobs 2
+wait_on_run synth_4
+open_run synth_4 -name synth_4
+launch_runs impl_4 -to_step write_bitstream -jobs 2
+wait_on_run impl_4
+close_design
+open_run impl_4
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {D:/VivadoProjects/eMMC_Controller_fifo.xpr/eMMC_Controller_4.6.1_tuning.xpr/eMMC_Controller/eMMC_Controller.runs/impl_4/Test_eMMC_Controller.bit} [lindex [get_hw_devices] 1]
+set_property PROBES.FILE {D:/VivadoProjects/eMMC_Controller_fifo.xpr/eMMC_Controller_4.6.1_tuning.xpr/eMMC_Controller/eMMC_Controller.runs/impl_4/debug_nets.ltx} [lindex [get_hw_devices] 1]
+current_hw_device [lindex [get_hw_devices] 1]
+refresh_hw_device [lindex [get_hw_devices] 1]
+set_property PROBES.FILE {D:/VivadoProjects/eMMC_Controller_fifo.xpr/eMMC_Controller_4.6.1_tuning.xpr/eMMC_Controller/eMMC_Controller.runs/impl_4/debug_nets.ltx} [lindex [get_hw_devices] 1]
+set_property PROGRAM.FILE {D:/VivadoProjects/eMMC_Controller_fifo.xpr/eMMC_Controller_4.6.1_tuning.xpr/eMMC_Controller/eMMC_Controller.runs/impl_4/Test_eMMC_Controller.bit} [lindex [get_hw_devices] 1]
+program_hw_devices [lindex [get_hw_devices] 1]
+refresh_hw_device [lindex [get_hw_devices] 1]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}] -trigger_now
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]]
+set_property TRIGGER_COMPARE_VALUE eq1'b0 [get_hw_probes eMMC_controller_inst0/rd_cmd_temp_reg_n_0_ -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]]
+add_wave -into {hw_ila_data_1.wcfg} -radix hex {eMMC_controller_inst0/fifo_wr_start}
+set_property TRIGGER_COMPARE_VALUE eq1'b1 [get_hw_probes eMMC_controller_inst0/rd_cmd_temp_reg_n_0_ -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}] -trigger_now
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]]
+save_wave_config {D:/VivadoProjects/eMMC_Controller_fifo.xpr/eMMC_Controller_4.6.1_tuning.xpr/eMMC_Controller/eMMC_Controller.hw/hw_1/wave/hw_ila_data_1/hw_ila_data_1.wcfg}
+close_hw
+close_design
+reset_run synth_4
+launch_runs synth_4 -jobs 2
+wait_on_run synth_4
+open_run synth_4 -name synth_4
+show_objects -name find_1 [get_nets -hierarchical -top_net_of_hierarchical_group -filter { NAME =~  "*Sector_offset*" } ]
+show_objects -name find_1 [get_nets -hierarchical -top_net_of_hierarchical_group -filter { NAME =~  "*rd_cmd_temp*" } ]
+set_property mark_debug true [get_nets [list {eMMC_controller_inst0/rd_cmd_temp_reg_n_0_[0]} {eMMC_controller_inst0/rd_cmd_temp[0]_i_1_n_0} {eMMC_controller_inst0/rd_cmd_temp[1]_i_1_n_0} {eMMC_controller_inst0/rd_cmd_temp[2]_i_1_n_0}]]
+show_objects -name find_2 [get_nets -hierarchical -top_net_of_hierarchical_group -filter { NAME =~  "*fifo_wr_en*" } ]
+set_property mark_debug true [get_nets [list eMMC_controller_inst0/fifo_wr_end_i_1_n_0]]
+set_property mark_debug true [get_nets [list {eMMC_controller_inst0/rd_cmd_temp_reg_n_0_[1]} {eMMC_controller_inst0/rd_cmd_temp_reg_n_0_[2]}]]
+set_property mark_debug false [get_nets [list {eMMC_controller_inst0/rd_cmd_temp[1]_i_1_n_0} {eMMC_controller_inst0/rd_cmd_temp[0]_i_1_n_0} {eMMC_controller_inst0/rd_cmd_temp[2]_i_1_n_0}]]
+set_property mark_debug false [get_nets [list eMMC_controller_inst0/fifo_wr_start]]
+disconnect_debug_port u_ila_0/probe8
+connect_debug_port u_ila_0/probe8 [get_nets [list eMMC_controller_inst0/fifo_wr_end_i_1_n_0 ]] -channel_start_index 0
+create_debug_port u_ila_0 probe
+set_property port_width 3 [get_debug_ports u_ila_0/probe10]
+connect_debug_port u_ila_0/probe10 [get_nets [list {eMMC_controller_inst0/rd_cmd_temp_reg_n_0_[2]} {eMMC_controller_inst0/rd_cmd_temp_reg_n_0_[1]} {eMMC_controller_inst0/rd_cmd_temp_reg_n_0_[0]} ]]
+save_constraints
+launch_runs impl_4 -to_step write_bitstream -jobs 2
+wait_on_run impl_4
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {D:/VivadoProjects/eMMC_Controller_fifo.xpr/eMMC_Controller_4.6.1_tuning.xpr/eMMC_Controller/eMMC_Controller.runs/impl_4/Test_eMMC_Controller.bit} [lindex [get_hw_devices] 1]
+set_property PROBES.FILE {D:/VivadoProjects/eMMC_Controller_fifo.xpr/eMMC_Controller_4.6.1_tuning.xpr/eMMC_Controller/eMMC_Controller.runs/impl_4/debug_nets.ltx} [lindex [get_hw_devices] 1]
+current_hw_device [lindex [get_hw_devices] 1]
+refresh_hw_device [lindex [get_hw_devices] 1]
+set_property PROBES.FILE {D:/VivadoProjects/eMMC_Controller_fifo.xpr/eMMC_Controller_4.6.1_tuning.xpr/eMMC_Controller/eMMC_Controller.runs/impl_4/debug_nets.ltx} [lindex [get_hw_devices] 1]
+set_property PROGRAM.FILE {D:/VivadoProjects/eMMC_Controller_fifo.xpr/eMMC_Controller_4.6.1_tuning.xpr/eMMC_Controller/eMMC_Controller.runs/impl_4/Test_eMMC_Controller.bit} [lindex [get_hw_devices] 1]
+program_hw_devices [lindex [get_hw_devices] 1]
+refresh_hw_device [lindex [get_hw_devices] 1]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}] -trigger_now
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]]
+set_property TRIGGER_COMPARE_VALUE eq1'h0 [get_hw_probes eMMC_controller_inst0/rd_cmd_temp_reg_n_0__2 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]]
+add_wave -into {hw_ila_data_1.wcfg} -radix hex {eMMC_controller_inst0/fifo_wr_end_i_1_n_0}
+add_wave -into {hw_ila_data_1.wcfg} -radix hex {eMMC_controller_inst0/rd_cmd_temp_reg_n_0__2}
+set_property TRIGGER_COMPARE_VALUE eq1'h1 [get_hw_probes eMMC_controller_inst0/rd_cmd_temp_reg_n_0__2 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]]
+save_wave_config {D:/VivadoProjects/eMMC_Controller_fifo.xpr/eMMC_Controller_4.6.1_tuning.xpr/eMMC_Controller/eMMC_Controller.hw/hw_1/wave/hw_ila_data_1/hw_ila_data_1.wcfg}
+close_hw
+close_design
+reset_run synth_4
+launch_runs synth_4 -jobs 2
+wait_on_run synth_4
+open_run synth_4 -name synth_4
+delete_debug_port [get_debug_ports {u_ila_0/probe8 }]
+set_property mark_debug false [get_nets [list eMMC_controller_inst0/fifo_wr_end_i_1_n_0]]
+save_constraints
+launch_runs impl_4 -to_step write_bitstream -jobs 2
+wait_on_run impl_4
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {D:/VivadoProjects/eMMC_Controller_fifo.xpr/eMMC_Controller_4.6.1_tuning.xpr/eMMC_Controller/eMMC_Controller.runs/impl_4/Test_eMMC_Controller.bit} [lindex [get_hw_devices] 1]
+set_property PROBES.FILE {D:/VivadoProjects/eMMC_Controller_fifo.xpr/eMMC_Controller_4.6.1_tuning.xpr/eMMC_Controller/eMMC_Controller.runs/impl_4/debug_nets.ltx} [lindex [get_hw_devices] 1]
+current_hw_device [lindex [get_hw_devices] 1]
+refresh_hw_device [lindex [get_hw_devices] 1]
+set_property PROBES.FILE {D:/VivadoProjects/eMMC_Controller_fifo.xpr/eMMC_Controller_4.6.1_tuning.xpr/eMMC_Controller/eMMC_Controller.runs/impl_4/debug_nets.ltx} [lindex [get_hw_devices] 1]
+set_property PROGRAM.FILE {D:/VivadoProjects/eMMC_Controller_fifo.xpr/eMMC_Controller_4.6.1_tuning.xpr/eMMC_Controller/eMMC_Controller.runs/impl_4/Test_eMMC_Controller.bit} [lindex [get_hw_devices] 1]
+program_hw_devices [lindex [get_hw_devices] 1]
+refresh_hw_device [lindex [get_hw_devices] 1]
+set_property PROBES.FILE {D:/VivadoProjects/eMMC_Controller_fifo.xpr/eMMC_Controller_4.6.1_tuning.xpr/eMMC_Controller/eMMC_Controller.runs/impl_4/debug_nets.ltx} [lindex [get_hw_devices] 1]
+set_property PROGRAM.FILE {D:/VivadoProjects/eMMC_Controller_fifo.xpr/eMMC_Controller_4.6.1_tuning.xpr/eMMC_Controller/eMMC_Controller.runs/impl_4/Test_eMMC_Controller.bit} [lindex [get_hw_devices] 1]
+program_hw_devices [lindex [get_hw_devices] 1]
+refresh_hw_device [lindex [get_hw_devices] 1]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}] -trigger_now
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
+wait_on_hw_ila -timeout 0 [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
+upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}] -trigger_now
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]]
+set_property TRIGGER_COMPARE_VALUE eq1'b0 [get_hw_probes eMMC_controller_inst0/rd_cmd_temp_reg_n_0_ -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]]
+add_wave -into {hw_ila_data_1.wcfg} -radix hex {u_ila_0_rd_cmd_temp_reg_n_0_}
+set_property TRIGGER_COMPARE_VALUE eq1'b1 [get_hw_probes eMMC_controller_inst0/rd_cmd_temp_reg_n_0_ -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
+set_property TRIGGER_COMPARE_VALUE eq5'hXX [get_hw_probes eMMC_controller_inst0/Steps_Curr_State -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]]
+wait_on_hw_ila -timeout 0 [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
+upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}] -trigger_now
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]]
+add_wave -into {hw_ila_data_1.wcfg} -radix hex {u_ila_0_rd_cmd_temp_reg_n_0__1}
+save_wave_config {D:/VivadoProjects/eMMC_Controller_fifo.xpr/eMMC_Controller_4.6.1_tuning.xpr/eMMC_Controller/eMMC_Controller.hw/hw_1/wave/hw_ila_data_1/hw_ila_data_1.wcfg}
+close_hw
+reset_run synth_4
+launch_runs synth_4 -jobs 2
+wait_on_run synth_4
+close_design
+open_run synth_4 -name synth_4
+show_objects -name find_1 [get_nets -hierarchical -top_net_of_hierarchical_group -filter { NAME =~  "*fifo_MUX*" } ]
+set_property mark_debug true [get_nets [list eMMC_controller_inst0/fifo_MUX]]
+create_debug_port u_ila_0 probe
+connect_debug_port u_ila_0/probe10 [get_nets [list eMMC_controller_inst0/fifo_MUX ]]
+save_constraints
+launch_runs impl_4 -to_step write_bitstream -jobs 2
+wait_on_run impl_4
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {D:/VivadoProjects/eMMC_Controller_fifo.xpr/eMMC_Controller_4.6.1_tuning.xpr/eMMC_Controller/eMMC_Controller.runs/impl_4/Test_eMMC_Controller.bit} [lindex [get_hw_devices] 1]
+set_property PROBES.FILE {D:/VivadoProjects/eMMC_Controller_fifo.xpr/eMMC_Controller_4.6.1_tuning.xpr/eMMC_Controller/eMMC_Controller.runs/impl_4/debug_nets.ltx} [lindex [get_hw_devices] 1]
+current_hw_device [lindex [get_hw_devices] 1]
+refresh_hw_device [lindex [get_hw_devices] 1]
+set_property PROBES.FILE {D:/VivadoProjects/eMMC_Controller_fifo.xpr/eMMC_Controller_4.6.1_tuning.xpr/eMMC_Controller/eMMC_Controller.runs/impl_4/debug_nets.ltx} [lindex [get_hw_devices] 1]
+set_property PROGRAM.FILE {D:/VivadoProjects/eMMC_Controller_fifo.xpr/eMMC_Controller_4.6.1_tuning.xpr/eMMC_Controller/eMMC_Controller.runs/impl_4/Test_eMMC_Controller.bit} [lindex [get_hw_devices] 1]
+program_hw_devices [lindex [get_hw_devices] 1]
+refresh_hw_device [lindex [get_hw_devices] 1]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}] -trigger_now
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]]
+set_property TRIGGER_COMPARE_VALUE eq5'h10 [get_hw_probes eMMC_controller_inst0/Steps_Curr_State -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]]
+add_wave -into {hw_ila_data_1.wcfg} -radix hex {eMMC_controller_inst0/rd_cmd_temp_reg_n_0__2}
+add_wave -into {hw_ila_data_1.wcfg} -radix hex {eMMC_controller_inst0/rd_cmd_temp_reg_n_0_}
+add_wave -into {hw_ila_data_1.wcfg} -radix hex {eMMC_controller_inst0/fifo_MUX}
+save_wave_config {D:/VivadoProjects/eMMC_Controller_fifo.xpr/eMMC_Controller_4.6.1_tuning.xpr/eMMC_Controller/eMMC_Controller.hw/hw_1/wave/hw_ila_data_1/hw_ila_data_1.wcfg}
+close_hw
+show_objects -name find_1 [get_nets -hierarchical -top_net_of_hierarchical_group -filter { NAME =~  "*fifo_MUX*" } ]
+reset_run synth_4
+launch_runs synth_4 -jobs 2
+wait_on_run synth_4
+close_design
+open_run synth_4 -name synth_4
+launch_runs impl_4 -to_step write_bitstream -jobs 2
+wait_on_run impl_4
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {D:/VivadoProjects/eMMC_Controller_fifo.xpr/eMMC_Controller_4.6.1_tuning.xpr/eMMC_Controller/eMMC_Controller.runs/impl_4/Test_eMMC_Controller.bit} [lindex [get_hw_devices] 1]
+set_property PROBES.FILE {D:/VivadoProjects/eMMC_Controller_fifo.xpr/eMMC_Controller_4.6.1_tuning.xpr/eMMC_Controller/eMMC_Controller.runs/impl_4/debug_nets.ltx} [lindex [get_hw_devices] 1]
+current_hw_device [lindex [get_hw_devices] 1]
+refresh_hw_device [lindex [get_hw_devices] 1]
+set_property PROBES.FILE {D:/VivadoProjects/eMMC_Controller_fifo.xpr/eMMC_Controller_4.6.1_tuning.xpr/eMMC_Controller/eMMC_Controller.runs/impl_4/debug_nets.ltx} [lindex [get_hw_devices] 1]
+set_property PROGRAM.FILE {D:/VivadoProjects/eMMC_Controller_fifo.xpr/eMMC_Controller_4.6.1_tuning.xpr/eMMC_Controller/eMMC_Controller.runs/impl_4/Test_eMMC_Controller.bit} [lindex [get_hw_devices] 1]
+program_hw_devices [lindex [get_hw_devices] 1]
+refresh_hw_device [lindex [get_hw_devices] 1]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]]
+close_hw
+reset_run synth_4
+launch_runs impl_4 -to_step write_bitstream -jobs 2
+wait_on_run impl_4
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {D:/VivadoProjects/eMMC_Controller_fifo.xpr/eMMC_Controller_4.6.1_tuning.xpr/eMMC_Controller/eMMC_Controller.runs/impl_4/Test_eMMC_Controller.bit} [lindex [get_hw_devices] 1]
+set_property PROBES.FILE {D:/VivadoProjects/eMMC_Controller_fifo.xpr/eMMC_Controller_4.6.1_tuning.xpr/eMMC_Controller/eMMC_Controller.runs/impl_4/debug_nets.ltx} [lindex [get_hw_devices] 1]
+current_hw_device [lindex [get_hw_devices] 1]
+refresh_hw_device [lindex [get_hw_devices] 1]
+set_property PROBES.FILE {D:/VivadoProjects/eMMC_Controller_fifo.xpr/eMMC_Controller_4.6.1_tuning.xpr/eMMC_Controller/eMMC_Controller.runs/impl_4/debug_nets.ltx} [lindex [get_hw_devices] 1]
+set_property PROGRAM.FILE {D:/VivadoProjects/eMMC_Controller_fifo.xpr/eMMC_Controller_4.6.1_tuning.xpr/eMMC_Controller/eMMC_Controller.runs/impl_4/Test_eMMC_Controller.bit} [lindex [get_hw_devices] 1]
+program_hw_devices [lindex [get_hw_devices] 1]
+refresh_hw_device [lindex [get_hw_devices] 1]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}] -trigger_now
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]]
+set_property TRIGGER_COMPARE_VALUE eq3'h1 [get_hw_probes eMMC_controller_inst0/rd_cmd_temp_reg_n_0_ -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]]
+set_property TRIGGER_COMPARE_VALUE eq3'b100 [get_hw_probes eMMC_controller_inst0/rd_cmd_temp_reg_n_0_ -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
+set_property TRIGGER_COMPARE_VALUE eq3'b001 [get_hw_probes eMMC_controller_inst0/rd_cmd_temp_reg_n_0_ -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]]
+wait_on_hw_ila -timeout 0 [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
+upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}] -trigger_now
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
+set_property TRIGGER_COMPARE_VALUE eq3'b110 [get_hw_probes eMMC_controller_inst0/rd_cmd_temp_reg_n_0_ -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]]
+wait_on_hw_ila -timeout 0 [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
+upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}] -trigger_now
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]]
+archive_project D:/VivadoProjects/eMMC/eMMC_Controller_5.xpr.zip -temp_dir {C:/Users/Wu Lizhou/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-138080-WuLizhou-PC} -force -exclude_run_results -include_config_settings

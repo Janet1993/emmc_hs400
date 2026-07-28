@@ -1,0 +1,26 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/VivadoProjects/eMMC_Controller_4.6.1_tuning.xpr/eMMC_Controller/eMMC_Controller.srcs/sources_1/imports/sources/CRC7_400K.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CRC7_400K
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/VivadoProjects/eMMC_Controller_4.6.1_tuning.xpr/eMMC_Controller/eMMC_Controller.srcs/sources_1/imports/sources/CRC7.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CRC7
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/VivadoProjects/eMMC_Controller_4.6.1_tuning.xpr/eMMC_Controller/eMMC_Controller.srcs/sources_1/imports/sources/CRC16_Check.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CRC16_Check
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/VivadoProjects/eMMC_Controller_4.6.1_tuning.xpr/eMMC_Controller/eMMC_Controller.srcs/sources_1/imports/sources/CRC16.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CRC16
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/VivadoProjects/eMMC_Controller_4.6.1_tuning.xpr/eMMC_Controller/eMMC_Controller.srcs/sources_1/ip/clk_divided/clk_divided_clk_wiz.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_divided_clk_wiz
+INFO: [VRFC 10-2458] undeclared symbol clk_in1_clk_divided, assumed default net type wire [D:/VivadoProjects/eMMC_Controller_4.6.1_tuning.xpr/eMMC_Controller/eMMC_Controller.srcs/sources_1/ip/clk_divided/clk_divided_clk_wiz.v:86]
+INFO: [VRFC 10-2458] undeclared symbol clk_200M_clk_divided, assumed default net type wire [D:/VivadoProjects/eMMC_Controller_4.6.1_tuning.xpr/eMMC_Controller/eMMC_Controller.srcs/sources_1/ip/clk_divided/clk_divided_clk_wiz.v:146]
+INFO: [VRFC 10-2458] undeclared symbol clk_200M_reverse_clk_divided, assumed default net type wire [D:/VivadoProjects/eMMC_Controller_4.6.1_tuning.xpr/eMMC_Controller/eMMC_Controller.srcs/sources_1/ip/clk_divided/clk_divided_clk_wiz.v:148]
+INFO: [VRFC 10-2458] undeclared symbol clk_200M_capture_clk_divided, assumed default net type wire [D:/VivadoProjects/eMMC_Controller_4.6.1_tuning.xpr/eMMC_Controller/eMMC_Controller.srcs/sources_1/ip/clk_divided/clk_divided_clk_wiz.v:150]
+INFO: [VRFC 10-2458] undeclared symbol clk_20M_clk_divided, assumed default net type wire [D:/VivadoProjects/eMMC_Controller_4.6.1_tuning.xpr/eMMC_Controller/eMMC_Controller.srcs/sources_1/ip/clk_divided/clk_divided_clk_wiz.v:152]
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/VivadoProjects/eMMC_Controller_4.6.1_tuning.xpr/eMMC_Controller/eMMC_Controller.srcs/sources_1/ip/clk_divided/clk_divided.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_divided
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/VivadoProjects/eMMC_Controller_4.6.1_tuning.xpr/eMMC_Controller/eMMC_Controller.srcs/sources_1/imports/sources/eMMC_controller.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module eMMC_controller
+WARNING: [VRFC 10-756] identifier crc16_check_and0 is used before its declaration [D:/VivadoProjects/eMMC_Controller_4.6.1_tuning.xpr/eMMC_Controller/eMMC_Controller.srcs/sources_1/imports/sources/eMMC_controller.v:1033]
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/VivadoProjects/eMMC_Controller_4.6.1_tuning.xpr/eMMC_Controller/eMMC_Controller.srcs/sources_1/imports/sources/Test_eMMC_Controller.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Test_eMMC_Controller
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/VivadoProjects/eMMC_Controller_4.6.1_tuning.xpr/eMMC_Controller/eMMC_Controller.srcs/sim_1/imports/eMMC_Controller/srcs/sim/Test_eMMC_Controller_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Test_eMMC_Controller_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/VivadoProjects/eMMC_Controller_4.6.1_tuning.xpr/eMMC_Controller/eMMC_Controller.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl

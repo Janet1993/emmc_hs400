@@ -1,0 +1,63 @@
+Vivado Simulator 2015.4
+Copyright 1986-1999, 2001-2015 Xilinx, Inc. All Rights Reserved.
+Running: G:/Xilinx/Vivado/2015.4/bin/unwrapped/win64.o/xelab.exe -wto 0ae2e975806e42f58cbca616d740b948 --debug typical --relax --mt 2 -L fifo_generator_v13_0_1 -L xil_defaultlib -L blk_mem_gen_v8_3_1 -L unisims_ver -L unimacro_ver -L secureip --snapshot Test_eMMC_Controller_tb_behav xil_defaultlib.Test_eMMC_Controller_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package synopsys.attributes
+Compiling package ieee.std_logic_misc
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package std.textio
+Compiling package ieee.std_logic_textio
+Compiling module unisims_ver.IBUF
+Compiling module unisims_ver.MMCME2_ADV(CLKFBOUT_MULT_F=10.0,...
+Compiling module unisims_ver.BUFG
+Compiling module xil_defaultlib.clk_divided_clk_wiz
+Compiling module xil_defaultlib.clk_divided
+Compiling module unisims_ver.IOBUF(IBUF_LOW_PWR="FALSE",IOSTA...
+Compiling module unisims_ver.IDELAYCTRL_default
+Compiling module unisims_ver.IDELAYE2(HIGH_PERFORMANCE_MODE="...
+Compiling module unisims_ver.BUFGCTRL(INIT_OUT=32'sb0,PRESELE...
+Compiling module unisims_ver.BUFGMUX_CTRL
+Compiling module unisims_ver.IDDR(DDR_CLK_EDGE="SAME_EDGE_PIP...
+Compiling module unisims_ver.ODDR(DDR_CLK_EDGE="SAME_EDGE")
+Compiling architecture behavioral of entity fifo_generator_v13_0_1.fifo_generator_v13_0_1_bhv_ss [\fifo_generator_v13_0_1_bhv_ss("...]
+Compiling architecture behavioral of entity fifo_generator_v13_0_1.fifo_generator_v13_0_1_bhv_preload0 [\fifo_generator_v13_0_1_bhv_prel...]
+Compiling architecture behavioral of entity fifo_generator_v13_0_1.fifo_generator_v13_0_1_conv [\fifo_generator_v13_0_1_conv(1,0...]
+Compiling architecture behavioral of entity fifo_generator_v13_0_1.fifo_generator_vhdl_beh [\fifo_generator_vhdl_beh(1,0,7,"...]
+Compiling architecture xilinx of entity fifo_generator_v13_0_1.fifo_generator_v13_0_1 [\fifo_generator_v13_0_1(1,0,7,"B...]
+Compiling architecture command_fifo_arch of entity xil_defaultlib.Command_fifo [command_fifo_default]
+Compiling module xil_defaultlib.CRC16
+Compiling module xil_defaultlib.CRC16_Check
+Compiling module xil_defaultlib.CRC7_400K
+Compiling module xil_defaultlib.CRC7
+Compiling architecture behavioral of entity fifo_generator_v13_0_1.fifo_generator_v13_0_1_bhv_ss [\fifo_generator_v13_0_1_bhv_ss("...]
+Compiling architecture behavioral of entity fifo_generator_v13_0_1.fifo_generator_v13_0_1_conv [\fifo_generator_v13_0_1_conv(1,0...]
+Compiling architecture behavioral of entity fifo_generator_v13_0_1.fifo_generator_vhdl_beh [\fifo_generator_vhdl_beh(1,0,8,"...]
+Compiling architecture xilinx of entity fifo_generator_v13_0_1.fifo_generator_v13_0_1 [\fifo_generator_v13_0_1(1,0,8,"B...]
+Compiling architecture read_data512b_buffer_arch of entity xil_defaultlib.Read_data512B_buffer [read_data512b_buffer_default]
+Compiling architecture behavioral of entity fifo_generator_v13_0_1.fifo_generator_v13_0_1_bhv_ss [\fifo_generator_v13_0_1_bhv_ss("...]
+Compiling architecture behavioral of entity fifo_generator_v13_0_1.fifo_generator_v13_0_1_bhv_preload0 [\fifo_generator_v13_0_1_bhv_prel...]
+Compiling architecture behavioral of entity fifo_generator_v13_0_1.fifo_generator_v13_0_1_conv [\fifo_generator_v13_0_1_conv(1,0...]
+Compiling architecture behavioral of entity fifo_generator_v13_0_1.fifo_generator_vhdl_beh [\fifo_generator_vhdl_beh(1,0,12,...]
+Compiling architecture xilinx of entity fifo_generator_v13_0_1.fifo_generator_v13_0_1 [\fifo_generator_v13_0_1(1,0,12,"...]
+Compiling architecture data_fifo_arch of entity xil_defaultlib.Data_fifo [data_fifo_default]
+Compiling architecture output_stage_behavioral of entity blk_mem_gen_v8_3_1.blk_mem_gen_v8_3_1_output_stage [\blk_mem_gen_v8_3_1_output_stage...]
+Compiling architecture output_stage_behavioral of entity blk_mem_gen_v8_3_1.blk_mem_gen_v8_3_1_output_stage [\blk_mem_gen_v8_3_1_output_stage...]
+Compiling architecture softecc_output_reg_stage_behavioral of entity blk_mem_gen_v8_3_1.blk_mem_gen_v8_3_1_softecc_output_reg_stage [\blk_mem_gen_v8_3_1_softecc_outp...]
+Compiling architecture mem_module_behavioral of entity blk_mem_gen_v8_3_1.blk_mem_gen_v8_3_1_mem_module [\blk_mem_gen_v8_3_1_mem_module("...]
+Compiling architecture behavioral of entity blk_mem_gen_v8_3_1.blk_mem_gen_v8_3_1 [\blk_mem_gen_v8_3_1("blk_mem_gen...]
+Compiling architecture blk_mem_gen_0_arch of entity xil_defaultlib.blk_mem_gen_0 [blk_mem_gen_0_default]
+Compiling module xil_defaultlib.eMMC_controller_default
+Compiling module xil_defaultlib.Test_eMMC_Controller
+Compiling module xil_defaultlib.Test_eMMC_Controller_tb
+Compiling module xil_defaultlib.glbl
+Waiting for 1 sub-compilation(s) to finish...
+Built simulation snapshot Test_eMMC_Controller_tb_behav
