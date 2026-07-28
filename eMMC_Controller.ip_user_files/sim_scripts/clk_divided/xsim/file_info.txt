@@ -1,0 +1,4 @@
+Language File-Name              IP           Library         File-Path                                                                      
+Verilog, clk_divided_clk_wiz.v, clk_divided, xil_defaultlib, ../../../../eMMC_Controller.srcs/sources_1/ip/clk_divided/clk_divided_clk_wiz.v
+Verilog, clk_divided.v,         clk_divided, xil_defaultlib, ../../../../eMMC_Controller.srcs/sources_1/ip/clk_divided/clk_divided.v        
+Verilog, glbl.v,                *,           xil_defaultlib, glbl.v                                                                         
