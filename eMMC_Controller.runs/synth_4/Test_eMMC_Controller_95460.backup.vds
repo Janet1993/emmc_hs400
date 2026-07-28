@@ -1,0 +1,17 @@
+#-----------------------------------------------------------
+# Vivado v2015.4 (64-bit)
+# SW Build 1412921 on Wed Nov 18 09:43:45 MST 2015
+# IP Build 1412160 on Tue Nov 17 13:47:24 MST 2015
+# Start of session at: Thu Oct 20 13:57:18 2016
+# Process ID: 95460
+# Current directory: D:/VivadoProjects/eMMC_Controller_4.6.1_tuning.xpr/eMMC_Controller/eMMC_Controller.runs/synth_4
+# Command line: vivado.exe -log Test_eMMC_Controller.vds -mode batch -messageDb vivado.pb -notrace -source Test_eMMC_Controller.tcl
+# Log file: D:/VivadoProjects/eMMC_Controller_4.6.1_tuning.xpr/eMMC_Controller/eMMC_Controller.runs/synth_4/Test_eMMC_Controller.vds
+# Journal file: D:/VivadoProjects/eMMC_Controller_4.6.1_tuning.xpr/eMMC_Controller/eMMC_Controller.runs/synth_4\vivado.jou
+#-----------------------------------------------------------
+source Test_eMMC_Controller.tcl -notrace
+Command: synth_design -top Test_eMMC_Controller -part xc7z020clg484-1 -flatten_hierarchy none
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-1223] The version limit for your license is '2016.05' and will expire in -142 days. A version limit expiration means that, although you may be able to continue to use the current version of tools or IP with this license, you will not be eligible for any updates or new releases.

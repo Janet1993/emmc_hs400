@@ -1,0 +1,4 @@
+ERROR: Exception caught trying to open file D:\VivadoProjects\eMMC_Controller_10M_CMD_test\eMMC_Controller.runs\synth_4/runme.log
+	Exception name: Error
+	Exception error code: 70
+	Exception message: 没有权限
