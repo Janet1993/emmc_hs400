@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="write_buf_tb_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="write_buf_tb" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="2077600000fs"></ZoomStartTime>
+      <ZoomEndTime time="2130365143fs"></ZoomEndTime>
+      <Cursor1Time time="103784000fs"></Cursor1Time>
+   </zoom_setting>
+   <WVObjectSize size="8" />
+   <wave_markers>
+      <marker time="35806900000" label="" />
+      <marker time="11610000000" label="" />
+      <marker time="488470000000" label="" />
+   </wave_markers>
+   <wvobject db_ref_id="1" fp_name="/write_buf_tb/clka" type="logic">
+      <obj_property name="ElementShortName">clka</obj_property>
+      <obj_property name="ObjectShortName">clka</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/write_buf_tb/rsta" type="logic">
+      <obj_property name="ElementShortName">rsta</obj_property>
+      <obj_property name="ObjectShortName">rsta</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/write_buf_tb/ena" type="logic">
+      <obj_property name="ElementShortName">ena</obj_property>
+      <obj_property name="ObjectShortName">ena</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/write_buf_tb/wea" type="logic">
+      <obj_property name="ElementShortName">wea</obj_property>
+      <obj_property name="ObjectShortName">wea</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/write_buf_tb/addra" type="array">
+      <obj_property name="ElementShortName">addra[7:0]</obj_property>
+      <obj_property name="ObjectShortName">addra[7:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/write_buf_tb/douta" type="array">
+      <obj_property name="ElementShortName">douta[15:0]</obj_property>
+      <obj_property name="ObjectShortName">douta[15:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/write_buf_tb/i" type="array">
+      <obj_property name="ElementShortName">i[31:0]</obj_property>
+      <obj_property name="ObjectShortName">i[31:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/write_buf_tb/dina" type="array">
+      <obj_property name="ElementShortName">dina[15:0]</obj_property>
+      <obj_property name="ObjectShortName">dina[15:0]</obj_property>
+   </wvobject>
+</wave_config>

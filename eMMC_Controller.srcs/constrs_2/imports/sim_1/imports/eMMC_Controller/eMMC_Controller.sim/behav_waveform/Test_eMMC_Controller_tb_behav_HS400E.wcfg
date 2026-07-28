@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="Test_eMMC_Controller_tb_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="Test_eMMC_Controller_tb" />
+            <top_module name="glbl" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="23793600000fs"></ZoomStartTime>
+      <ZoomEndTime time="23840100001fs"></ZoomEndTime>
+      <Cursor1Time time="23857000000fs"></Cursor1Time>
+   </zoom_setting>
+   <WVObjectSize size="12" />
+   <wvobject db_ref_id="1" fp_name="/Test_eMMC_Controller_tb/eMMC_Controller/eMMC_controller_inst0/DEVICE_DIMENSION" type="array">
+      <obj_property name="ElementShortName">DEVICE_DIMENSION[31:0]</obj_property>
+      <obj_property name="ObjectShortName">DEVICE_DIMENSION[31:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/Test_eMMC_Controller_tb/sysrst" type="logic">
+      <obj_property name="ElementShortName">sysrst</obj_property>
+      <obj_property name="ObjectShortName">sysrst</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/Test_eMMC_Controller_tb/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/Test_eMMC_Controller_tb/eMMC_Controller/eMMC_controller_inst0/clk_200M" type="logic">
+      <obj_property name="ElementShortName">clk_200M</obj_property>
+      <obj_property name="ObjectShortName">clk_200M</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/Test_eMMC_Controller_tb/eMMC_Controller/eMMC_controller_inst0/Curr_State" type="array">
+      <obj_property name="ElementShortName">Curr_State[4:0]</obj_property>
+      <obj_property name="ObjectShortName">Curr_State[4:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/Test_eMMC_Controller_tb/eMMC_Controller/eMMC_controller_inst0/HS400E_Curr_State" type="array">
+      <obj_property name="ElementShortName">HS400E_Curr_State[4:0]</obj_property>
+      <obj_property name="ObjectShortName">HS400E_Curr_State[4:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/Test_eMMC_Controller_tb/eMMC_Controller/eMMC_controller_inst0/Steps_Curr_State" type="array">
+      <obj_property name="ElementShortName">Steps_Curr_State[4:0]</obj_property>
+      <obj_property name="ObjectShortName">Steps_Curr_State[4:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/Test_eMMC_Controller_tb/eMMC_Controller/eMMC_controller_inst0/data_wr_en" type="logic">
+      <obj_property name="ElementShortName">data_wr_en</obj_property>
+      <obj_property name="ObjectShortName">data_wr_en</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/Test_eMMC_Controller_tb/eMMC_Controller/data_in" type="array">
+      <obj_property name="ElementShortName">data_in[15:0]</obj_property>
+      <obj_property name="ObjectShortName">data_in[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="group2170" type="group">
+      <obj_property name="label">writebuffer</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject db_ref_id="1" fp_name="/Test_eMMC_Controller_tb/eMMC_Controller/eMMC_controller_inst0/Device_data_bus_out" type="array">
+         <obj_property name="ElementShortName">Device_data_bus_out[15:0]</obj_property>
+         <obj_property name="ObjectShortName">Device_data_bus_out[15:0]</obj_property>
+         <obj_property name="CustomSignalColor">#FF00FF</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/Test_eMMC_Controller_tb/eMMC_Controller/eMMC_controller_inst0/steps_sending_data_counter" type="array">
+         <obj_property name="ElementShortName">steps_sending_data_counter[8:0]</obj_property>
+         <obj_property name="ObjectShortName">steps_sending_data_counter[8:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/Test_eMMC_Controller_tb/eMMC_Controller/eMMC_controller_inst0/Steps_fifo_data_16" type="array">
+         <obj_property name="ElementShortName">Steps_fifo_data_16[15:0]</obj_property>
+         <obj_property name="ObjectShortName">Steps_fifo_data_16[15:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/Test_eMMC_Controller_tb/eMMC_Controller/eMMC_controller_inst0/back_up_addr" type="array">
+         <obj_property name="ElementShortName">back_up_addr[7:0]</obj_property>
+         <obj_property name="ObjectShortName">back_up_addr[7:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+         <obj_property name="CustomSignalColor">#FAAFBE</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/Test_eMMC_Controller_tb/eMMC_Controller/eMMC_controller_inst0/Sector_addr" type="array">
+         <obj_property name="ElementShortName">Sector_addr[27:0]</obj_property>
+         <obj_property name="ObjectShortName">Sector_addr[27:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/Test_eMMC_Controller_tb/eMMC_Controller/eMMC_controller_inst0/write_buf_en" type="logic">
+         <obj_property name="ElementShortName">write_buf_en</obj_property>
+         <obj_property name="ObjectShortName">write_buf_en</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/Test_eMMC_Controller_tb/eMMC_Controller/eMMC_controller_inst0/data_source_select" type="logic">
+         <obj_property name="ElementShortName">data_source_select</obj_property>
+         <obj_property name="ObjectShortName">data_source_select</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/Test_eMMC_Controller_tb/eMMC_Controller/eMMC_controller_inst0/rd_data_fifo_en" type="logic">
+         <obj_property name="ElementShortName">rd_data_fifo_en</obj_property>
+         <obj_property name="ObjectShortName">rd_data_fifo_en</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/Test_eMMC_Controller_tb/eMMC_Controller/eMMC_controller_inst0/Steps_rd_data_fifo_en" type="logic">
+         <obj_property name="ElementShortName">Steps_rd_data_fifo_en</obj_property>
+         <obj_property name="ObjectShortName">Steps_rd_data_fifo_en</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/Test_eMMC_Controller_tb/eMMC_Controller/eMMC_controller_inst0/write_data_again_en" type="logic">
+         <obj_property name="ElementShortName">write_data_again_en</obj_property>
+         <obj_property name="ObjectShortName">write_data_again_en</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/Test_eMMC_Controller_tb/eMMC_Controller/eMMC_controller_inst0/HS400E_crc16_status_end" type="logic">
+      <obj_property name="ElementShortName">HS400E_crc16_status_end</obj_property>
+      <obj_property name="ObjectShortName">HS400E_crc16_status_end</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/Test_eMMC_Controller_tb/eMMC_Controller/eMMC_controller_inst0/fifo_data_16" type="array">
+      <obj_property name="ElementShortName">fifo_data_16[15:0]</obj_property>
+      <obj_property name="ObjectShortName">fifo_data_16[15:0]</obj_property>
+   </wvobject>
+</wave_config>

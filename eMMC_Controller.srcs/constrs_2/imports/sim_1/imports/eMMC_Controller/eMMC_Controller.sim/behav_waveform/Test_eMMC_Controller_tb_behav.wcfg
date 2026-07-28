@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="Test_eMMC_Controller_tb_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="Test_eMMC_Controller_tb" />
+            <top_module name="glbl" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="624090000000fs"></ZoomStartTime>
+      <ZoomEndTime time="765390000001fs"></ZoomEndTime>
+      <Cursor1Time time="741840000000fs"></Cursor1Time>
+   </zoom_setting>
+   <WVObjectSize size="48" />
+   <wave_markers>
+      <marker time="35806900000" label="" />
+      <marker time="11610000000" label="" />
+      <marker time="488470000000" label="" />
+   </wave_markers>
+   <wvobject db_ref_id="1" fp_name="/Test_eMMC_Controller_tb/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/Test_eMMC_Controller_tb/clk_400k" type="logic">
+      <obj_property name="ElementShortName">clk_400k</obj_property>
+      <obj_property name="ObjectShortName">clk_400k</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/Test_eMMC_Controller_tb/sysrst" type="logic">
+      <obj_property name="ElementShortName">sysrst</obj_property>
+      <obj_property name="ObjectShortName">sysrst</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/Test_eMMC_Controller_tb/eMMC_Controller/eMMC_controller_inst0/device_cmd" type="logic">
+      <obj_property name="ElementShortName">device_cmd</obj_property>
+      <obj_property name="ObjectShortName">device_cmd</obj_property>
+   </wvobject>
+   <wvobject fp_name="vbus61" type="vbus">
+      <obj_property name="label">Cmd_bit_counter</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/Test_eMMC_Controller_tb/eMMC_Controller/eMMC_controller_inst0/Cmd_bit_counter" type="array">
+      <obj_property name="ElementShortName">Cmd_bit_counter[5:0]</obj_property>
+      <obj_property name="ObjectShortName">Cmd_bit_counter[5:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/Test_eMMC_Controller_tb/eMMC_Controller/eMMC_controller_inst0/device_cmd_tobe_sent" type="array">
+      <obj_property name="ElementShortName">device_cmd_tobe_sent[39:0]</obj_property>
+      <obj_property name="ObjectShortName">device_cmd_tobe_sent[39:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/Test_eMMC_Controller_tb/eMMC_Controller/eMMC_controller_inst0/Device_cmd_out" type="logic">
+      <obj_property name="ElementShortName">Device_cmd_out</obj_property>
+      <obj_property name="ObjectShortName">Device_cmd_out</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/Test_eMMC_Controller_tb/eMMC_Controller/eMMC_controller_inst0/Response_received" type="logic">
+      <obj_property name="ElementShortName">Response_received</obj_property>
+      <obj_property name="ObjectShortName">Response_received</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/Test_eMMC_Controller_tb/eMMC_Controller/eMMC_controller_inst0/Received_resp_buff" type="array">
+      <obj_property name="ElementShortName">Received_resp_buff[135:0]</obj_property>
+      <obj_property name="ObjectShortName">Received_resp_buff[135:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/Test_eMMC_Controller_tb/eMMC_Controller/eMMC_controller_inst0/Start_check_resp" type="logic">
+      <obj_property name="ElementShortName">Start_check_resp</obj_property>
+      <obj_property name="ObjectShortName">Start_check_resp</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/Test_eMMC_Controller_tb/eMMC_Controller/eMMC_controller_inst0/Check_resp_passed" type="array">
+      <obj_property name="ElementShortName">Check_resp_passed[1:0]</obj_property>
+      <obj_property name="ObjectShortName">Check_resp_passed[1:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/Test_eMMC_Controller_tb/eMMC_Controller/eMMC_controller_inst0/Cmd_transfer_end" type="logic">
+      <obj_property name="ElementShortName">Cmd_transfer_end</obj_property>
+      <obj_property name="ObjectShortName">Cmd_transfer_end</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/Test_eMMC_Controller_tb/eMMC_Controller/device_data_bus" type="array">
+      <obj_property name="ElementShortName">device_data_bus[7:0]</obj_property>
+      <obj_property name="ObjectShortName">device_data_bus[7:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/Test_eMMC_Controller_tb/eMMC_Controller/sysclk_100M" type="logic">
+      <obj_property name="ElementShortName">sysclk_100M</obj_property>
+      <obj_property name="ObjectShortName">sysclk_100M</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/Test_eMMC_Controller_tb/eMMC_Controller/eMMC_controller_inst0/clk_200M" type="logic">
+      <obj_property name="ElementShortName">clk_200M</obj_property>
+      <obj_property name="ObjectShortName">clk_200M</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/Test_eMMC_Controller_tb/eMMC_Controller/eMMC_controller_inst0/Curr_State" type="array">
+      <obj_property name="ElementShortName">Curr_State[4:0]</obj_property>
+      <obj_property name="ObjectShortName">Curr_State[4:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/Test_eMMC_Controller_tb/eMMC_Controller/eMMC_controller_inst0/Next_State" type="array">
+      <obj_property name="ElementShortName">Next_State[4:0]</obj_property>
+      <obj_property name="ObjectShortName">Next_State[4:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/Test_eMMC_Controller_tb/eMMC_Controller/eMMC_controller_inst0/Device_selection_counter" type="array">
+      <obj_property name="ElementShortName">Device_selection_counter[1:0]</obj_property>
+      <obj_property name="ObjectShortName">Device_selection_counter[1:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/Test_eMMC_Controller_tb/eMMC_Controller/eMMC_controller_inst0/start_transfer_cmd" type="logic">
+      <obj_property name="ElementShortName">start_transfer_cmd</obj_property>
+      <obj_property name="ObjectShortName">start_transfer_cmd</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/Test_eMMC_Controller_tb/eMMC_Controller/device_cmd" type="logic">
+      <obj_property name="ElementShortName">device_cmd</obj_property>
+      <obj_property name="ObjectShortName">device_cmd</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/Test_eMMC_Controller_tb/eMMC_Controller/device_data_strobe" type="logic">
+      <obj_property name="ElementShortName">device_data_strobe</obj_property>
+      <obj_property name="ObjectShortName">device_data_strobe</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/Test_eMMC_Controller_tb/eMMC_Controller/heartbeat" type="logic">
+      <obj_property name="ElementShortName">heartbeat</obj_property>
+      <obj_property name="ObjectShortName">heartbeat</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/Test_eMMC_Controller_tb/eMMC_Controller/rst_n" type="logic">
+      <obj_property name="ElementShortName">rst_n</obj_property>
+      <obj_property name="ObjectShortName">rst_n</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/Test_eMMC_Controller_tb/eMMC_Controller/sysrst" type="logic">
+      <obj_property name="ElementShortName">sysrst</obj_property>
+      <obj_property name="ObjectShortName">sysrst</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/Test_eMMC_Controller_tb/eMMC_Controller/eMMC_controller_inst0/start_receiving_resp" type="logic">
+      <obj_property name="ElementShortName">start_receiving_resp</obj_property>
+      <obj_property name="ObjectShortName">start_receiving_resp</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/Test_eMMC_Controller_tb/eMMC_Controller/eMMC_controller_inst0/device_response_in" type="logic">
+      <obj_property name="ElementShortName">device_response_in</obj_property>
+      <obj_property name="ObjectShortName">device_response_in</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/Test_eMMC_Controller_tb/eMMC_Controller/eMMC_controller_inst0/Device_resp_temp" type="logic">
+      <obj_property name="ElementShortName">Device_resp_temp</obj_property>
+      <obj_property name="ObjectShortName">Device_resp_temp</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/Test_eMMC_Controller_tb/eMMC_Controller/eMMC_controller_inst0/Response_received" type="logic">
+      <obj_property name="ElementShortName">Response_received</obj_property>
+      <obj_property name="ObjectShortName">Response_received</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/Test_eMMC_Controller_tb/eMMC_Controller/eMMC_controller_inst0/clk_400K_en" type="logic">
+      <obj_property name="ElementShortName">clk_400K_en</obj_property>
+      <obj_property name="ObjectShortName">clk_400K_en</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/Test_eMMC_Controller_tb/eMMC_Controller/device_clk" type="logic">
+      <obj_property name="ElementShortName">device_clk</obj_property>
+      <obj_property name="ObjectShortName">device_clk</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/Test_eMMC_Controller_tb/eMMC_Controller/eMMC_controller_inst0/Response_Arriving" type="logic">
+      <obj_property name="ElementShortName">Response_Arriving</obj_property>
+      <obj_property name="ObjectShortName">Response_Arriving</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/Test_eMMC_Controller_tb/eMMC_Controller/eMMC_controller_inst0/Device_selection_counter" type="array">
+      <obj_property name="ElementShortName">Device_selection_counter[1:0]</obj_property>
+      <obj_property name="ObjectShortName">Device_selection_counter[1:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/Test_eMMC_Controller_tb/eMMC_Controller/eMMC_controller_inst0/Received_response" type="array">
+      <obj_property name="ElementShortName">Received_response[135:0]</obj_property>
+      <obj_property name="ObjectShortName">Received_response[135:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/Test_eMMC_Controller_tb/eMMC_Controller/eMMC_controller_inst0/Received_resp_buff" type="array">
+      <obj_property name="ElementShortName">Received_resp_buff[135:0]</obj_property>
+      <obj_property name="ObjectShortName">Received_resp_buff[135:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/Test_eMMC_Controller_tb/eMMC_Controller/eMMC_controller_inst0/Timer1Start" type="logic">
+      <obj_property name="ElementShortName">Timer1Start</obj_property>
+      <obj_property name="ObjectShortName">Timer1Start</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/Test_eMMC_Controller_tb/eMMC_Controller/eMMC_controller_inst0/Timer1" type="array">
+      <obj_property name="ElementShortName">Timer1[4:0]</obj_property>
+      <obj_property name="ObjectShortName">Timer1[4:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/Test_eMMC_Controller_tb/eMMC_Controller/eMMC_controller_inst0/start_transfer_cmd" type="logic">
+      <obj_property name="ElementShortName">start_transfer_cmd</obj_property>
+      <obj_property name="ObjectShortName">start_transfer_cmd</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/Test_eMMC_Controller_tb/eMMC_Controller/eMMC_controller_inst0/Cmd_bit_counter" type="array">
+      <obj_property name="ElementShortName">Cmd_bit_counter[5:0]</obj_property>
+      <obj_property name="ObjectShortName">Cmd_bit_counter[5:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/Test_eMMC_Controller_tb/eMMC_Controller/eMMC_controller_inst0/device_cmd_temp_40" type="array">
+      <obj_property name="ElementShortName">device_cmd_temp_40[39:0]</obj_property>
+      <obj_property name="ObjectShortName">device_cmd_temp_40[39:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/Test_eMMC_Controller_tb/eMMC_Controller/eMMC_controller_inst0/Cmd_CRC[7]" type="logic">
+      <obj_property name="ElementShortName">[7]</obj_property>
+      <obj_property name="ObjectShortName">Cmd_CRC[7]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/Test_eMMC_Controller_tb/eMMC_Controller/eMMC_controller_inst0/device_cmd_temp_40[39]" type="logic">
+      <obj_property name="ElementShortName">[39]</obj_property>
+      <obj_property name="ObjectShortName">device_cmd_temp_40[39]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/Test_eMMC_Controller_tb/eMMC_Controller/eMMC_controller_inst0/Cmd_info_bit" type="logic">
+      <obj_property name="ElementShortName">Cmd_info_bit</obj_property>
+      <obj_property name="ObjectShortName">Cmd_info_bit</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/Test_eMMC_Controller_tb/eMMC_Controller/eMMC_controller_inst0/Device_cmd_out" type="logic">
+      <obj_property name="ElementShortName">Device_cmd_out</obj_property>
+      <obj_property name="ObjectShortName">Device_cmd_out</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/Test_eMMC_Controller_tb/eMMC_Controller/eMMC_controller_inst0/Cmd_CRC" type="array">
+      <obj_property name="ElementShortName">Cmd_CRC[7:0]</obj_property>
+      <obj_property name="ObjectShortName">Cmd_CRC[7:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/Test_eMMC_Controller_tb/eMMC_Controller/eMMC_controller_inst0/CRC_out" type="array">
+      <obj_property name="ElementShortName">CRC_out[6:0]</obj_property>
+      <obj_property name="ObjectShortName">CRC_out[6:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/Test_eMMC_Controller_tb/eMMC_Controller/eMMC_controller_inst0/CRC_en" type="logic">
+      <obj_property name="ElementShortName">CRC_en</obj_property>
+      <obj_property name="ObjectShortName">CRC_en</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/Test_eMMC_Controller_tb/eMMC_Controller/eMMC_controller_inst0/CRC_rst" type="logic">
+      <obj_property name="ElementShortName">CRC_rst</obj_property>
+      <obj_property name="ObjectShortName">CRC_rst</obj_property>
+   </wvobject>
+</wave_config>
